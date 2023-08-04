@@ -1,0 +1,22 @@
+<mat-grid-list class="grid-characters" cols="3" gutterSize="10px" rowHeight="2:1">
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+
+      <ng-container [matColumnDef]="displayedColumns[0]">
+        <mat-header-cell mat-header-cell *matHeaderCellDef> {{displayedColumns[0]}} </mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let fact"> {{fact.name}} </mat-cell>
+      </ng-container>
+
+      <ng-container [matColumnDef]="displayedColumns[1]">
+        <mat-header-cell mat-header-cell *matHeaderCellDef> {{displayedColumns[1]}} </mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let fact"> {{fact.description}} </mat-cell>
+      </ng-container>
+
+        <ng-container [matColumnDef]="displayedColumns[2]">
+            <mat-header-cell mat-header-cell *matHeaderCellDef> {{displayedColumns[2]}} </mat-header-cell>
+            <mat-cell mat-cell *matCellDef="let fact"> {{fact.additionalInformation}} </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</mat-grid-list>

@@ -1,0 +1,13 @@
+<app-page-content-header [showBackButton]="false">Quellmagien</app-page-content-header>
+
+<p class="description">Magie hat unzählige Ausprägungen, aber grundsätzlich wird sie in {{specializations.length}} Quellmagien unterteilt:</p>
+
+@for (specialization of specializations; track specialization; let i = $index) {
+  <div class="specialization-container">
+    <span class="dot background-{{specialization.color}}"><mat-icon>{{specialization.icon}}</mat-icon></span>
+    <div class="specialization-text">
+      <h3>{{specialization.name}}</h3>
+      <p>{{specialization.description}}</p>
+    </div>
+  </div>
+}

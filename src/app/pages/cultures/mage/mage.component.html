@@ -1,0 +1,131 @@
+<app-page-content-header [showBackButton]="false"
+  >Die Magier</app-page-content-header
+  >
+
+  <div>
+    <h2>Bevölkerung</h2>
+
+    <p>
+      Die Gesamtzahl der Magier wird auf etwa 250.000 geschätzt, wobei sie oft
+      auch deutlich älter als Menschen werden können.
+    </p>
+
+    <h2>Kalender</h2>
+
+    <h3>Beginn</h3>
+
+    <p>Am Ersten Tag der Geschichte befinden wir uns am Sommeranfang.</p>
+
+    <h3>Zeiteinheiten</h3>
+
+    <p>
+      Ein Tag wird in Zeitabschnitte eingeteilt: Katzenstunde, Wolfstunde,
+      Krähenstunde, Krötenstunde, Eulenstunde. Es werden keine Wochentage
+      verwendet, denn einzelne Tage sind bedeutungslos.
+    </p>
+
+    <p>
+      Magier zählen nicht die Jahre, da sie für sie irrelevant sind. Stattdessen
+      werden Jahreszeiten gezählt. Sie werden generell sehr alt und brauchen Mana,
+      um sich am Leben zu halten. Je älter ein Magier, desto höher der
+      Manaverbrauch. Die meisten Magier können mit wenig Aufwand Zeitmagie in
+      Grundzügen so lernen, dass sie ihren Körper lange erhalten können, aber sie
+      sind nicht unsterblich.
+    </p>
+
+    <p>
+      Jeder Monat wird von einer Familiarklasse beherrscht. Somit entscheidet der
+      Monat, in dem ein Magier geboren wurde, welchen Familiar er beschwören kann.
+      Ansonsten können Familiare auch durch ein komplexes Ritual weitergegeben
+      werden, sofern die Person im selben Monat geboren wurde.
+    </p>
+
+    @for (month of months; track month; let i = $index) {
+      <mat-list>
+        <mat-list-item>{{ i + 1 }}. {{ month }}</mat-list-item>
+      </mat-list>
+    }
+
+    <h2>Elementenwende</h2>
+
+    <p>
+      Es werden jeweils der Tag des Frühlingsanfangs (Frühjahrswende),
+      Sommeranfangs (Sommerwende), Herbstanfangs (Herbstwende) und Winteranfangs
+      (Winterwende) speziell gefeiert. Da die Magier mit den Elementen verbunden
+      sind, ist dies ein besonderer Tag für sie. Die Sommerwende feiern die Magier
+      zusätzlich als Geburtstag der Ersten wie ein Fest der Lebensfreude. Die
+      Winterwende ist gleichzeitig ein Gedenkfest für den Tag, an dem die Erste
+      verschwand und sich die Magier von den Menschen abwandten.
+    </p>
+
+    <h2>Ereignisse</h2>
+
+    <p>Ereignisse im Leben eines Magiers weichen von denen der Menschen ab.</p>
+
+    <h3>Geburt</h3>
+    Magier feiern keinen Geburtstag. Stattdessen feiern sie die Elementenwende für
+    die Jahreszeit, in der sie geboren sind.
+
+    <h3>Erwachen</h3>
+    Im jungen Erwachsenenalter zeigt sich normalerweise die Magie zum ersten Mal.
+    Die erste Magie ist immer die Quellmagie und man feiert sie normalerweise mit
+    Freunden und Familie. Quellmagie kann vererbt werden, allerdings auch manchmal
+    von weit entfernten Verwandten. Das Initiationsritual hat 3 Ausgänge:
+    Bestehen, Vergessen oder Tod. Jene, die sich für das Vergessen entscheiden,
+    entsagen für immer der Magie. Ihnen werden die Erinnerungen geraubt und dafür
+    neue gegeben. Im Gegenzug können sie unter den Menschen leben und bekommen
+    eine neue Familie zugewiesen.
+
+    <h3>Familiartausch</h3>
+    Wenn beide Magier einwilligen, kann mit einem kräftezehrenden magischen Ritual
+    der Familiar des jeweils anderen angenommen werden. Beide Familiare müssen
+    ihre neuen Partner akzeptieren, ansonsten wird das Ritual scheitern. Dazu
+    werden den Familiaren normalerweise große Mengen an Magie als Gaben
+    dargeboten.
+
+    <h3>Heirat</h3>
+    Magier heiraten nicht. Die Gründung einer Familie ist eher selten und steht
+    für sie nicht im Fokus. Sie haben generell wenig Nachwuchs.
+
+    <h3>Seelenverbindung</h3>
+    <p>
+      Es ist möglich, magische Seelen miteinander zu verknüpfen, sodass sie für
+      immer verbunden sind. Je stärker die Bande sind, desto verschwimmt die
+      Grenze zwischen zwei Individuen zu einem. Seelenverbindungen zeigen sich in
+      Form einer magischen Zeichnung im Halsbereich, aus der auch ablesbar ist, um
+      welche Verdindung es sich handelt. Es gibt verschiedene Varianten:
+    </p>
+
+    <p>
+      Seelenbande: Beide Parteien können sich über größere Distanzen aufspüren und
+      den Zustand des anderen erkennen.
+    </p>
+
+    <p>
+      Seelenfesseln: Beide spüren, was der andere spüren. Der Tod des Einen hat
+      den Tod des Anderen zur Folge. Diese Form wird für gewöhnlich als
+      Absicherung vor diplomatischen Eskalationen oder als Fluch verwendet.
+    </p>
+
+    <p>
+      Seelenketten: Beide spüren, was der andere spürt. Diese Variante kann auch
+      gegenseitiges Gedankenlesen beinhalten. Ein echter Tod ist nur möglich, wenn
+      beide sterben. Stirbt nur einer, bleibt die Seele in der Welt der Lebenden
+      erhalten. Mit größerem Aufwand ist sogar eine Wiederbelebung möglich.
+    </p>
+
+    <h3>Beerdingungen</h3>
+    <p>
+      Nach dem Tod wandelt sich der Körper eines Magiers in einen Manakristall,
+      der dessen übrige Energie enthält. Dieser wird den Elementen zurückgegeben
+      oder für einen höheren Zweck verwendet. Als Datum wird häufig der Lichttag
+      ausgewählt, um Hoffnung zu spenden.
+    </p>
+
+    <h2>Redewendungen</h2>
+
+    <app-fact-table
+      [displayedColumns]="['Redewendung', 'Bedeutung', 'Hinweise']"
+      [facts]="facts"
+    ></app-fact-table>
+  </div>

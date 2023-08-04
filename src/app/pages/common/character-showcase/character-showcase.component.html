@@ -1,0 +1,78 @@
+@if (character) {
+  <div class="card-container">
+    <app-avatar-card [image]="character.image" [title]="getCharacterTitle()"
+    [subtitles]="getCharacterSubtitles()" [specialfont]="true"></app-avatar-card>
+    @if (character.citation) {
+      <app-card class="citation-card" class="fullwidth-card">
+        <mat-card-content>
+          <mat-icon>format_quote</mat-icon>
+          <p>{{character.citation}}</p>
+        </mat-card-content>
+      </app-card>
+    }
+    @if (character.description) {
+      <app-card heading="Beschreibung">
+        <app-description-card [description]="character.description"></app-description-card>
+      </app-card>
+    }
+    @if (character.fears) {
+      <app-card heading="Ängste">
+        @if (character.fears) {
+          <app-list-card [listItems]="character.fears"></app-list-card>
+        }
+      </app-card>
+    }
+    @if (character.past) {
+      <app-card heading="Herkunft">
+        <app-description-card [description]="character.past"></app-description-card>
+      </app-card>
+    }
+    @if (character.problem) {
+      <app-card heading="Herausforderungen">
+        <app-description-card [description]="character.problem"></app-description-card>
+      </app-card>
+    }
+    @if (character.development) {
+      <app-card heading="Entwicklung">
+        <app-description-card [description]="character.development"></app-description-card>
+      </app-card>
+    }
+    <app-card heading="Fakten">
+      <app-personality-card [character]="character" [specialization]="specialization"></app-personality-card>
+    </app-card>
+    @if (character.traits && character.traits.length > 0) {
+      <app-card heading="Eigenschaften">
+        <app-traits-card [traits]="character.traits"></app-traits-card>
+      </app-card>
+    }
+    @if (character.looks) {
+      <app-card heading="Aussehen">
+        <app-looks-card [looks]="character.looks" [symbol]="specialization?.iconName"></app-looks-card>
+      </app-card>
+    }
+    @if (character.skills && character.skills.length > 0) {
+      <app-card heading="Fähigkeiten">
+        <app-skill-card [skills]="character.skills"></app-skill-card>
+      </app-card>
+    }
+    @if (character.classes) {
+      <app-card heading="Unterricht">
+        @if (character.classes) {
+          <app-list-card [listItems]="character.classes"></app-list-card>
+        }
+      </app-card>
+    }
+    @if (character.loveInterests) {
+      <app-card heading="Shippings">
+        @for (loveInterest of character.loveInterests; track loveInterest) {
+          <app-love-interest
+          [loveInterest]="loveInterest"></app-love-interest>
+        }
+      </app-card>
+    }
+    @for (pet of character.pets; track pet) {
+      <app-avatar-card [image]="pet.image" [title]="pet.name"
+      [subtitle]="pet.description"></app-avatar-card>
+    }
+  </div>
+}

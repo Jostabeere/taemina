@@ -1,0 +1,8 @@
+<app-page-content-header [showBackButton]="false">Verbrauchsgüter</app-page-content-header>
+
+<img class="potion-image" src="assets/img/consumables/potions.webp" alt="Potions Image">
+
+@for (food of foods; track food; let i = $index) {
+  <app-avatar-card [image]="food.image" [title]="food.name"
+  [subtitles]="[food.description]"></app-avatar-card>
+}

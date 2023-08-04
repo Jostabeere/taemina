@@ -1,0 +1,19 @@
+<mat-list>
+  @for (skill of skills; track skill) {
+    <div>
+      <div class="skill-header">
+        @for (category of skill.category; track category) {
+          <mat-icon mat-list-icon
+          matTooltip="{{category}}">{{getIcon(category)}}</mat-icon>
+        }
+        {{skill.name}}
+      </div>
+      <div>
+        <p>{{skill.description}}</p>
+      </div>
+      @if (skills.indexOf(skill) != skills.length - 1) {
+        <mat-divider></mat-divider>
+      }
+    </div>
+  }
+</mat-list>

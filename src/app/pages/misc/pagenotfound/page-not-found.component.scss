@@ -1,0 +1,28 @@
+:host {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+h2 {
+    background: #9f8a57;
+    background: repeating-linear-gradient(to bottom, #FCEABB 0%, #efc349 50%, #cc8512 70%, #f7c94b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35pt;
+    font-weight: 500;
+    padding: 1em;
+}
+
+p {
+    font-size: 15pt;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 600px;
+    padding: 1em;
+    padding-top: 0;
+    text-align: center;
+}

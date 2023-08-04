@@ -1,0 +1,28 @@
+p, h2 {
+    white-space: 'wrap';
+}
+
+h2 {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+span {
+    margin-right: 0;
+}
+
+div {
+    display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.potion-image {
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .potion-image {
+        display: none;
+    }
+}

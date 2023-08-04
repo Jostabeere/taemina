@@ -1,0 +1,11 @@
+<app-page-content-header [showBackButton]="false">Tiere</app-page-content-header>
+
+<p>
+  Die Welt Ekylia ist reich an magischen und nichtmagischen Tierarten.
+</p>
+
+<img class="spoiler-image" src="assets/img/creature/phoenix.jpg">
+
+@for (animal of animals; track animal; let i = $index) {
+  <app-card heading="{{animal.name}}">{{animal.description}}</app-card>
+}

@@ -1,0 +1,33 @@
+<app-page-content-header [showBackButton]="false">Runenalphabet</app-page-content-header>
+
+<div>
+    <p class="paragraph">
+        Für die alte Magiesprache Mahoa wird eine geschwungene Runenschrift verwendet.
+        Zwar sprechen die meisten Magier kein Mahoa mehr, aber die Runenschrift hat noch immer große kulturelle
+        Bedeutung.
+        Es gibt generell nur Großbuchstaben und jede Rune hat einzeln verwendet eine bestimmte Bedeutung.
+    </p>
+
+    <a mat-stroked-button href="assets/font/Taemina-Regular.ttf" download="Taemina-Regular.ttf" target="_blank">
+        Runenschirftart herunterladen (.ttf)</a>
+</div>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef> Rune </th>
+        <td mat-cell *matCellDef="let element" class="mahoa"> {{element.name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="translation">
+        <th mat-header-cell *matHeaderCellDef> Übersetzung </th>
+        <td mat-cell *matCellDef="let element" class="translation"> {{element.name}} {{element.alternatives}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="meaning">
+        <th mat-header-cell *matHeaderCellDef> Bedeutung </th>
+        <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

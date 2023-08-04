@@ -1,0 +1,27 @@
+<app-page-content-header [showBackButton]="false">Charakter-Test</app-page-content-header>
+
+<img class="spoiler-image" src="assets/img/places/kuppel.webp">
+
+<form (submit)="evaluateResult()" class="centered">
+
+  @for (question of questions; track question; let i = $index) {
+    <mat-radio-group name="{{question.questionText}}" required>
+      <p class="question-heading">{{question.questionText}}</p>
+      @for (option of question.options; track option) {
+        <mat-radio-button value="{{option.optionId}}"
+          (change)='onChange(option.optionId, i, option.characters)' required>
+          <span class="option-text">
+            {{option.optionText}}
+          </span>
+        </mat-radio-button>
+      }
+    </mat-radio-group>
+  }
+
+  <mat-divider></mat-divider>
+
+  <button class="result-button" color="accent" mat-raised-button type="submit"
+    [disabled]="currentSelection.length == 0">
+    Ergebnis zeigen
+  </button>
+</form>

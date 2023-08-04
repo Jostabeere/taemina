@@ -1,0 +1,12 @@
+.chartWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.pie-label {
+  font-size: 16pt !important;
+  transform: translateY(10px);
+}

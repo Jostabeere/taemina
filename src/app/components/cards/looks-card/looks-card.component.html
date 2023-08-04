@@ -1,0 +1,69 @@
+<div>
+  <div class="looks">
+    <p>
+      <mat-icon [style.--elementColor]="looks.hairColor.color" class="hair-color">circle</mat-icon>
+      Haar
+    </p>
+    <p>
+      {{looks.hairColor.description}}
+    </p>
+  </div>
+  @if (looks.skinColor) {
+    <div class="looks">
+      <p>
+        <mat-icon [style.--elementColor]="looks.skinColor.color" class="hair-color">circle</mat-icon>
+        Haut
+      </p>
+      <p>
+        {{looks.skinColor.description}}
+      </p>
+    </div>
+  }
+  <div class="looks">
+    <p>
+      <mat-icon [style.--elementColor]="looks.eyeColor.color" class="hair-color">circle</mat-icon>
+      Augen
+    </p>
+    <p>
+      {{looks.eyeColor.description}}
+    </p>
+  </div>
+  @if (looks.accessory) {
+    <div class="looks">
+      <p>
+        <mat-icon>diamond</mat-icon>
+        Schmuck und Accessoires
+      </p>
+      <p>{{looks.accessory}}</p>
+    </div>
+  }
+  @if (symbol) {
+    <div class="looks">
+      <p>
+        <mat-icon>shape_line</mat-icon>
+        Symbol auf der Hand
+      </p>
+      <p>
+        {{symbol}}
+      </p>
+    </div>
+  }
+  @if (looks.face) {
+    <div class="looks">
+      <p>
+        <mat-icon>face</mat-icon>
+        Gesicht
+      </p>
+      <p>{{looks.face}}</p>
+    </div>
+  }
+  @if (looks.body) {
+    <div class="looks">
+      <p>
+        <mat-icon>accessibility_new</mat-icon>
+        Körper
+      </p>
+      <p>{{looks.body}}</p>
+    </div>
+  }
+</div>

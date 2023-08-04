@@ -1,0 +1,27 @@
+{
+  "context": {
+    "user": {
+      "id": "user-123",
+      "name": "Alex",
+      "timezone": "Europe/Berlin"
+    },
+    "environment": {
+      "app": "my-ai-assistant",
+      "version": "1.0.0"
+    }
+  },
+  "intent": {
+    "goal": "generate_report",
+    "parameters": {
+      "report_type": "sales",
+      "period": "last_quarter"
+    }
+  },
+  "references": [
+    {
+      "type": "document",
+      "id": "doc-456",
+      "url": "https://example.com/reports/q2.pdf"
+    }
+  ]
+}

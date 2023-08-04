@@ -1,0 +1,50 @@
+<div>
+
+  @if (specialization) {
+    <app-specialization-icon [specialization]="specialization" [showLabel]=true
+    class="character-icon"></app-specialization-icon>
+  }
+
+  @if (character.age && specialization) {
+    <mat-divider></mat-divider>
+  }
+
+  @if (character.age) {
+    <div class="skill-header">
+      <mat-icon>cake</mat-icon>
+      Alter
+    </div>
+  }
+  <div>
+    <p>{{character.age}}</p>
+  </div>
+
+  @if (character.birthday) {
+    <mat-divider></mat-divider>
+  }
+
+  @if (character.birthday) {
+    <div class="skill-header">
+      <mat-icon>date_range</mat-icon>
+      Geburtstag
+    </div>
+  }
+  <div>
+    <p>{{character.birthday}}</p>
+  </div>
+
+  @if (character.mbti) {
+    <mat-divider></mat-divider>
+  }
+
+  @if (character.mbti) {
+    <div class="skill-header">
+      <mat-icon>add_reaction</mat-icon>
+      MBTI-Typ
+    </div>
+  }
+  <div>
+    <p>{{character.mbti}}</p>
+  </div>
+
+</div>

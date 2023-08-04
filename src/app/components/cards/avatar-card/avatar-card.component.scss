@@ -1,0 +1,59 @@
+:host {
+  display: flex;
+  flex: 1 1 auto;
+  margin: 5px;
+  width: 100%;
+}
+
+mat-card {
+  flex: 1 1 auto;
+  flex-direction: row;
+  padding: 16px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.name-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+app-avatar {
+  display: flex;
+}
+
+h2 {
+  padding-top: 1rem;
+}
+
+.h2-regular {
+  font-size: 20pt;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h2-special {
+  font-size: 45pt;
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media screen and (max-width: 500px) {
+  mat-card {
+    flex-direction: column;
+  }
+
+  app-avatar {
+    justify-content: center;
+  }
+
+  .name-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+}

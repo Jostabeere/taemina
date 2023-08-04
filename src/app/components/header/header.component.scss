@@ -1,0 +1,38 @@
+mat-toolbar {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #d1d1d1;
+  height: auto;
+  padding: 16px;
+  text-shadow: 2px 2px 9px rgba(198,178,115,0.55);
+
+  button {
+    background: #9f8a57;
+    background: repeating-linear-gradient(to bottom, #FCEABB 0%, #efc349 50%, #cc8512 70%, #f7c94b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    cursor: pointer;
+    font-size: 16pt;
+    text-shadow: 2px 2px 9px rgba(198,178,115,0.55);
+  
+  }
+
+  h1 {
+    background: #9f8a57;
+    background: repeating-linear-gradient(to bottom, #FCEABB 0%, #efc349 50%, #cc8512 70%, #f7c94b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@font-face {
+  font-family: 'Taemina';
+  src: url('../../../assets/font/Taemina-Regular.ttf') format('truetype');
+}
+
+.mahoa {
+  color: #a78536;
+  font-size: 16pt;
+  font-family: 'Taemina';
+  padding-left: 16px;
+}

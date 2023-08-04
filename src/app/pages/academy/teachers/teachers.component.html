@@ -1,0 +1,26 @@
+<app-page-content-header [showBackButton]="false"
+  >Manahunen</app-page-content-header
+  >
+
+  <div class="content">
+    @for (teacher of teachers; track teacher) {
+      <div>
+        <app-avatar
+          [image]="teacher.image"
+          [alternative]="teacher.name"
+        ></app-avatar>
+        <div class="name-wrapper">
+          <h2 class="image-description">
+            {{ teacher.lastName }}
+          </h2>
+          @if (teacher.classes) {
+            @for (c of teacher.classes; track c) {
+              <p class="image-description">
+                {{ c }}
+              </p>
+            }
+          }
+        </div>
+      </div>
+    }
+  </div>

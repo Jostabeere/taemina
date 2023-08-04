@@ -1,0 +1,11 @@
+@if (specialization) {
+  <span class="background-{{specialization.color}}" matTooltip="{{specialization.name}}">
+    <mat-icon>{{specialization.icon}}</mat-icon>
+  </span>
+}
+
+@if (!specialization) {
+  <span class="background-none" matTooltip="Mensch (keine Magie)">
+    <mat-icon>person</mat-icon>
+  </span>
+}

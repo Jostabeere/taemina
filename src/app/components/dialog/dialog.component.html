@@ -1,0 +1,18 @@
+
+<div class="mat-dialog-title">
+    <h2>Dein Testergebnis 🎉</h2>
+    <button mat-icon-button class="close-button" [mat-dialog-close]="true">
+        <mat-icon class="close-icon">close</mat-icon>
+    </button>
+</div>
+
+<mat-divider></mat-divider>
+
+<mat-dialog-content>
+    <app-avatar [image]="getImage()" [alternative]="getTitle()"></app-avatar>
+    <h3>{{getTitle()}}</h3>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close mat-raised-button color="accent" [routerLink]="getRouterLink()">Charakter öffnen</button>
+</mat-dialog-actions>

@@ -1,0 +1,14 @@
+<mat-card class="avatar-card">
+  <app-avatar [image]="image" [alternative]="title"></app-avatar>
+  <div class="name-wrapper">
+    <h2 [class]="specialfont ? 'h2-special' : 'h2-regular'">{{title}}</h2>
+    @if (subtitle) {
+      <p>{{subtitle}}</p>
+    }
+    @if (subtitles) {
+      @for (sub of subtitles; track sub) {
+        <p>{{sub}}</p>
+      }
+    }
+  </div>
+</mat-card>

@@ -1,0 +1,13 @@
+
+@if (specialization) {
+  <span class="dot background-{{specialization.color}}">
+    <mat-icon>{{specialization.icon}}</mat-icon>
+  </span>
+}
+
+@if (showLabel) {
+  <br>
+  }
+  @if (showLabel) {
+    <label>{{specialization.name}}</label>
+  }

@@ -1,0 +1,53 @@
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.image-description {
+    display: flex;
+    align-self: center;
+    max-width: 600px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.name-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+app-avatar {
+  display: flex;
+}
+
+.h2-special {
+  font-size: 45pt;
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media screen and (max-width: 500px) {
+  mat-card {
+    flex-direction: column;
+  }
+
+  app-avatar {
+    justify-content: center;
+  }
+
+  .name-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+}

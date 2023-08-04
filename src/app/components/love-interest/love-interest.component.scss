@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+}
+
+.container-love-interest {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+
+  h2 {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.love-color {
+  color: #c40909;
+  opacity: calc(var(--interest, 1) / 10);
+}
+
+mat-slider {
+  margin-bottom: 10px;
+}
