@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 600px;
+}

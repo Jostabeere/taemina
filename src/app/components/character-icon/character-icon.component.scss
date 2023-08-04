@@ -1,0 +1,88 @@
+span {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+}
+
+@mixin replace-color($color) {
+  background-color: $color;
+}
+
+.background-light {
+  color: white;
+  background: linear-gradient(to bottom, white, #ff9b29);
+}
+
+.background-water {
+  color: white;
+  background: linear-gradient(to top, #00008b, #83dfff);
+}
+
+.background-fire {
+  color: white;
+  background: linear-gradient(to bottom, #FCE77D, #e7252c);
+}
+
+.background-empathy {
+  color: white;
+  background: linear-gradient(to bottom, #ffa7fd, #da0000);
+}
+
+.background-earth {
+  color: white;
+  background: linear-gradient(to bottom, #a1907f, #000000);
+}
+
+.background-air {
+  color: white;
+  background: linear-gradient(to top, #cdf5fa, #517f8c);
+}
+
+.background-shadow {
+  color: white;
+  background: linear-gradient(to top, #9160a2, #000000);
+}
+
+.background-luck {
+  color: white;
+  background: linear-gradient(to bottom, #97BC62FF, #1e4d1f);
+}
+
+.background-enhancement {
+  color: white;
+  background: linear-gradient(to top, #89ABE3FF, #EA738DFF);
+}
+
+.background-time {
+  color: white;
+  background: linear-gradient(to top, #7a7a7a, #dadada);
+}
+
+.background-summoning {
+  color: white;
+  background: linear-gradient(to top, #2F3C7E, #FBEAEB);
+}
+
+.background-illusion {
+  color: white;
+  background: linear-gradient(to top, #5f91dc, #ff9364, #7cd973); /* Standard syntax (must be last) */
+}
+
+.background-plant {
+  //background-color: #99F443;
+  color: white;
+  background: linear-gradient(to top, #99F443, #EC449B);
+}
+
+.background-ice {
+  color: white;
+  background: linear-gradient(to bottom, #36c2fc, #c2fff7);
+}
+
+.background-metamorphosis {
+  color: white;
+  background: linear-gradient(to bottom, #b5f8d1, #003a2b);
+}

@@ -1,0 +1,59 @@
+<div>
+  <div class="looks">
+    <p>
+      <mat-icon [style.--elementColor]="looks.hairColor.color" class="hair-color">circle</mat-icon>
+      Haar
+    </p>
+    <p>
+      {{looks.hairColor.description}}
+    </p>
+  </div>
+  <div *ngIf="looks.skinColor" class="looks">
+    <p>
+      <mat-icon [style.--elementColor]="looks.skinColor.color" class="hair-color">circle</mat-icon>
+      Haut
+    </p>
+    <p>
+      {{looks.skinColor.description}}
+    </p>
+  </div>
+  <div class="looks">
+    <p>
+      <mat-icon [style.--elementColor]="looks.eyeColor.color" class="hair-color">circle</mat-icon>
+      Augen
+    </p>
+    <p>
+      {{looks.eyeColor.description}}
+    </p>
+  </div>
+  <div *ngIf="looks.accessory" class="looks">
+    <p>
+      <mat-icon>diamond</mat-icon>
+      Schmuck und Accessoires
+    </p>
+    <p>{{looks.accessory}}</p>
+  </div>
+  <div *ngIf="symbol" class="looks">
+    <p>
+      <mat-icon>shape_line</mat-icon>
+      Symbol auf der Hand
+    </p>
+    <p>
+      {{symbol}}
+    </p>
+  </div>
+  <div *ngIf="looks.face" class="looks">
+    <p>
+      <mat-icon>face</mat-icon>
+      Gesicht
+    </p>
+    <p>{{looks.face}}</p>
+  </div>
+  <div *ngIf="looks.body" class="looks">
+    <p>
+      <mat-icon>accessibility_new</mat-icon>
+      Körper
+    </p>
+    <p>{{looks.body}}</p>
+  </div>
+</div>

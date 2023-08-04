@@ -1,0 +1,45 @@
+:host {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.mat-raised-button {
+  margin: 8px;
+}
+
+.button-container {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  margin-bottom: 0;
+  margin-top: 16px;
+}
+
+h3 {
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 16px;
+}
+
+/* Responsive Styles
+@media screen and (max-width: 767px) {
+  :host {
+    align-items: center;
+  }
+}*/
+
+p:first-child {
+  margin-top: 16px;
+}
+
+
+.mat-list-item {
+  height: auto;
+}
+
+.rounded-avatar {
+  max-width: 30px;
+}

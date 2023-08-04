@@ -1,0 +1,11 @@
+
+<div>
+  <button mat-mini-fab aria-label="Zurück Button" *ngIf="showBackButton" (click)="onBackButton()" color="primary">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+  </button>
+  <h1>
+    <ng-content></ng-content>
+  </h1>
+</div>
+
+<mat-divider></mat-divider>

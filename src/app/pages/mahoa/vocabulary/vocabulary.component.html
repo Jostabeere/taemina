@@ -1,0 +1,156 @@
+<app-page-content-header [showBackButton]="false">Vokabular</app-page-content-header>
+
+
+<p>Nomen</p>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="word">
+        <th mat-header-cell *matHeaderCellDef> Wort </th>
+        <td mat-cell *matCellDef="let element"> {{element.word}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="translation">
+        <th mat-header-cell *matHeaderCellDef> Übersetzung </th>
+        <td mat-cell *matCellDef="let element"> {{element.translation}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="meaning">
+        <th mat-header-cell *matHeaderCellDef> Mahoa-Darstellung </th>
+        <td mat-cell *matCellDef="let element" class="mahoa"> {{element.translation.toUpperCase()}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<p>Verben</p>
+
+<table mat-table [dataSource]="verbDataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="word">
+        <th mat-header-cell *matHeaderCellDef> Wort </th>
+        <td mat-cell *matCellDef="let element"> {{element.word}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="translation">
+        <th mat-header-cell *matHeaderCellDef> Übersetzung </th>
+        <td mat-cell *matCellDef="let element"> {{element.translation}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="meaning">
+        <th mat-header-cell *matHeaderCellDef> Mahoa-Darstellung </th>
+        <td mat-cell *matCellDef="let element" class="mahoa"> {{element.translation.toUpperCase()}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="verbColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: verbColumns;"></tr>
+</table>
+
+<p>Adjektive</p>
+
+<table mat-table [dataSource]="adjectiveDataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="word">
+        <th mat-header-cell *matHeaderCellDef> Wort </th>
+        <td mat-cell *matCellDef="let element"> {{element.word}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="translation">
+        <th mat-header-cell *matHeaderCellDef> Übersetzung </th>
+        <td mat-cell *matCellDef="let element"> {{element.translation}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="meaning">
+        <th mat-header-cell *matHeaderCellDef> Mahoa-Darstellung </th>
+        <td mat-cell *matCellDef="let element" class="mahoa"> {{element.translation.toUpperCase()}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="adjectiveColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: adjectiveColumns;"></tr>
+</table>
+
+<p>Farben</p>
+
+<table mat-table [dataSource]="colorDataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="word">
+        <th mat-header-cell *matHeaderCellDef> Wort </th>
+        <td mat-cell *matCellDef="let element"> {{element.word}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="translation">
+        <th mat-header-cell *matHeaderCellDef> Übersetzung </th>
+        <td mat-cell *matCellDef="let element"> {{element.translation}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="meaning">
+        <th mat-header-cell *matHeaderCellDef> Mahoa-Darstellung </th>
+        <td mat-cell *matCellDef="let element" class="mahoa"> {{element.translation.toUpperCase()}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="colorColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: colorColumns;"></tr>
+</table>
+
+<p>Richtungen</p>
+
+<table mat-table [dataSource]="directionDataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="word">
+        <th mat-header-cell *matHeaderCellDef> Wort </th>
+        <td mat-cell *matCellDef="let element"> {{element.word}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="translation">
+        <th mat-header-cell *matHeaderCellDef> Übersetzung </th>
+        <td mat-cell *matCellDef="let element"> {{element.translation}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="meaning">
+        <th mat-header-cell *matHeaderCellDef> Mahoa-Darstellung </th>
+        <td mat-cell *matCellDef="let element" class="mahoa"> {{element.translation.toUpperCase()}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="directionColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: directionColumns;"></tr>
+</table>
+
+<p>Tiere</p>
+
+<table mat-table [dataSource]="animalDataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="word">
+        <th mat-header-cell *matHeaderCellDef> Wort </th>
+        <td mat-cell *matCellDef="let element"> {{element.word}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="translation">
+        <th mat-header-cell *matHeaderCellDef> Übersetzung </th>
+        <td mat-cell *matCellDef="let element"> {{element.translation}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="meaning">
+        <th mat-header-cell *matHeaderCellDef> Mahoa-Darstellung </th>
+        <td mat-cell *matCellDef="let element" class="mahoa"> {{element.translation.toUpperCase()}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="animalColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: animalColumns;"></tr>
+</table>
+
+<p>Weitere</p>
+
+<table mat-table [dataSource]="otherDataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="word">
+        <th mat-header-cell *matHeaderCellDef> Wort </th>
+        <td mat-cell *matCellDef="let element"> {{element.word}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="translation">
+        <th mat-header-cell *matHeaderCellDef> Übersetzung </th>
+        <td mat-cell *matCellDef="let element"> {{element.translation}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="meaning">
+        <th mat-header-cell *matHeaderCellDef> Mahoa-Darstellung </th>
+        <td mat-cell *matCellDef="let element" class="mahoa"> {{element.translation.toUpperCase()}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="otherColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: otherColumns;"></tr>
+</table>

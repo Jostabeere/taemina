@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Taemina';
+    src: url('../../../../assets/font/Taemina-Regular.ttf') format('truetype');
+    font-weight: bold;
+}
+
+.mahoa {
+    font-size: 32pt;
+    font-family: 'Taemina';
+}
+
+.translation {
+    font-size: 16pt;
+}
+
+.paragraph {
+    max-width: 600px;
+    padding-right: 16px;
+}
+
+.mat-table {
+    width: 100%;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+
+    a {
+        height: fit-content;
+        width: fit-content;
+    }
+}

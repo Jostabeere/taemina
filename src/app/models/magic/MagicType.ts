@@ -1,0 +1,17 @@
+export enum MagicType {
+  summoning = 'Beschwörung',
+  ice = 'Eis',
+  earth = 'Erde',
+  empathy = 'Empathie',
+  fire = 'Feuer',
+  luck = 'Glück',
+  illusion = 'Illusion',
+  light = 'Licht',
+  air = 'Luft',
+  plant = 'Pflanzen',
+  shadow = 'Schatten',
+  enhancement = 'Verstärkung',
+  water = 'Wasser',
+  time = 'Zeit',
+  metamorphosis = 'Metamorphose',
+}

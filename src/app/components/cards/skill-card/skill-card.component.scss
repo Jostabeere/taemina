@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+mat-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+mat-list-item {
+  display: flex;
+  height: auto;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .mat-icon {
+    margin-right: 10px;
+  }
+}

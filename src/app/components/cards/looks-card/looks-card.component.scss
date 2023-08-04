@@ -1,0 +1,46 @@
+:host {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+
+  mat-icon {
+    margin-right: 5px;
+  }
+}
+
+.looks > p:first-child {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.looks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mat-list-item-content {
+  margin: 0;
+}
+
+.hair-color {
+  color: var(--elementColor, #ff0000);
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

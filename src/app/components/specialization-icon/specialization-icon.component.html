@@ -1,0 +1,7 @@
+
+<span *ngIf="specialization" class="dot background-{{specialization.color}}">
+  <mat-icon>{{specialization.icon}}</mat-icon>
+</span>
+
+<br *ngIf="showLabel">
+<label *ngIf="showLabel">{{specialization.name}}</label>

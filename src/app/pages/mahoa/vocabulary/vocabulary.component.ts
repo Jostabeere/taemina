@@ -1,0 +1,212 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-vocabulary',
+  templateUrl: './vocabulary.component.html',
+  styleUrls: ['./vocabulary.component.scss']
+})
+export class VocabularyComponent implements OnInit {
+
+  displayedColumns: string[] = ['word', 'translation', 'meaning'];
+  dataSource = [
+    { word: 'Weg', translation: 'musun' },
+    { word: 'Leben', translation: 'valah' },
+    { word: 'Kind', translation: 'invalah' },
+    { word: 'Welt', translation: 'myn' },
+    { word: 'Akademie, Universität', translation: 'vem' },
+    { word: 'Selbst', translation: 'xa' },
+    { word: 'Art', translation: 'shine' },
+    { word: 'Stärke', translation: 'duwin' },
+    { word: 'Trauer', translation: 'ivy' },
+    { word: 'Oberfläche', translation: 'oba' },
+    { word: 'Name', translation: 'shuvan' },
+    { word: 'Morgen', translation: 'sorin' },
+    { word: 'Moment, Aufnahme, Jetzt', translation: 'momem' },
+    { word: 'Spiegel', translation: 'xa' },
+    { word: 'Sicht', translation: 'vel' },
+    { word: 'Mut', translation: 'sü' },
+    { word: 'Blut', translation: 'tyvalah' },
+    { word: 'Sonne', translation: 'sora' },
+    { word: 'Vene', translation: 'tusun' },
+    { word: 'Haut', translation: 'micarun' },
+    { word: 'Stärke', translation: 'qua' },
+    { word: 'Ziel', translation: 'yanela' },
+    { word: 'Portal', translation: 'omun' },
+    { word: 'Schmerz', translation: 'ataram' },
+    { word: 'Jäger', translation: 'ateg' },
+    { word: 'Magiejäger', translation: 'mateg' },
+    { word: 'Keks', translation: 'meluram' },
+    { word: 'Geist, Kampfgeist', translation: 'phua' },
+    { word: 'Hilfe', translation: 'falan' },
+    { word: 'Stein, Fels', translation: 'sequorm' },
+    { word: 'Übergang', translation: 'musul' },
+    { word: 'Schicksal', translation: 'fallah' },
+    { word: 'Richtung', translation: 'vua' },
+    { word: 'Feind', translation: 'elyz' },
+    { word: 'Verbündete', translation: 'shiz' },
+    { word: 'Sieg', translation: 'shifallah' },
+    { word: 'Geist', translation: 'pholo' },
+    { word: 'Schönheit', translation: 'luriz' },
+    { word: 'Offenbarung', translation: 'nel' },
+    { word: 'Essen, Nahrung', translation: 'yuna' },
+    { word: 'Kontakt, Begegnung', translation: 'aniha' },
+    { word: 'Täuschung, Schauspielerei', translation: 'küno' },
+    { word: 'Fall', translation: 'jumfre' },
+    { word: 'Trick', translation: 'wamyz' },
+    { word: 'Attacke', translation: 'shelely' },
+    { word: 'Tropfen', translation: 'pas iyon' },
+    { word: 'Konsequenzen', translation: 'künoxa' },
+    { word: 'Erbeben', translation: 'rebaz' },
+    { word: 'Kessel', translation: 'sejoli' },
+    { word: 'Eisen', translation: 'sequoz' },
+    { word: 'Träne', translation: 'pas' },
+    { word: 'Mitgefühl', translation: 'länas' },
+    { word: 'Herz', translation: 'leän' },
+    { word: 'Liebe', translation: 'le' },
+    { word: 'Manaträne', translation: 'manalänas' },
+    { word: 'Auge', translation: 'velu' },
+    { word: 'Bein', translation: 'kuron' },
+    { word: 'Schatten', translation: 'aku' },
+    { word: 'Licht', translation: 'neru' },
+    { word: 'Erde', translation: 'ja' },
+    { word: 'Luft', translation: 'loba' },
+    { word: 'Wasser', translation: 'pas' },
+    { word: 'Feuer', translation: 'quae' },
+    { word: 'Einheit', translation: 'reg' },
+    { word: 'Illusion', translation: 'wam' },
+    { word: 'Eis', translation: 'gen' },
+    { word: 'Verstärkung', translation: 'fau' },
+    { word: 'Empathie', translation: 'hae' },
+    { word: 'Pflanze', translation: 'duf' },
+    { word: 'Glück', translation: 'me' },
+    { word: 'Zeit', translation: 'bae' },
+    { word: 'Beschwörung', translation: 'kre' },
+    { word: 'Donner', translation: 'hiz' },
+    { word: 'Erholung', translation: 'imo' },
+    { word: 'Berührung', translation: 'aniha' },
+    { word: 'Verbindung', translation: 'wano' },
+    { word: 'Schöpfung', translation: 'shupu' },
+    { word: 'Wind', translation: 'lobaxu' },
+    { word: 'Glut', translation: 'emquaeris' },
+    { word: 'Schnee', translation: 'rygen' },
+    { word: 'Seele', translation: 'phua' },
+    { word: 'Musik', translation: 'lia' },
+    { word: 'Wunder', translation: 'kabam' },
+    { word: 'Veränderung', translation: 'shorely' },
+    { word: 'Berg', translation: 'jalosh' },
+    { word: 'Wald', translation: 'dufosh' },
+    { word: 'Wüste', translation: 'wane' },
+    { word: 'Sumpf', translation: 'pasja' },
+    { word: 'Ebenen', translation: 'fauf' },
+    { word: 'Küste', translation: 'rege' },
+    { word: 'Meer', translation: 'paso' },
+    { word: 'Tag', translation: 'ly' },
+  ];
+
+  verbColumns: string[] = ['word', 'translation', 'meaning'];
+  verbDataSource = [
+    { word: 'sein', translation: 'ya' },
+    { word: 'tun', translation: 'kü' },
+    { word: 'wollen', translation: 'ako' },
+    { word: 'geben', translation: 'aneya' },
+    { word: 'verändern', translation: 'shore' },
+    { word: 'zeigen', translation: 'nela' },
+    { word: 'bewegen', translation: 're' },
+    { word: 'bringen', translation: 'orela' },
+    { word: 'lernen', translation: 'veme' },
+    { word: 'kreieren, schaffen', translation: 'gyune' },
+    { word: 'öffnen', translation: 'erinaze' },
+    { word: 'fließen', translation: 'pare' },
+    { word: 'fallen', translation: 'jumi' },
+    { word: 'brechen', translation: 'shta' },
+    { word: 'kämpfen', translation: 'che' },
+    { word: 'verschwinden', translation: 'ore' },
+    { word: 'grüßen', translation: 'shuxe' },
+    { word: 'heilen', translation: 'ingyune' },
+    { word: 'lächeln', translation: 'kata' },
+    { word: 'verursachen', translation: 'shela' },
+    { word: 'schaden', translation: 'ata' },
+    { word: 'beschwören', translation: 'krera' },
+    { word: 'jagen', translation: 'yaga' },
+    { word: 'bringen', translation: 'anelyley' },
+    { word: 'offenbaren', translation: 'nela' },
+    { word: 'essen', translation: 'yune' },
+    { word: 'donnern, erbeben', translation: 'reba' },
+    { word: 'tanzen', translation: 'renela' },
+    { word: 'schweben', translation: 'rewha' },
+  ];
+
+  adjectiveColumns: string[] = ['word', 'translation', 'meaning'];
+  adjectiveDataSource = [
+    { word: 'neu, jung', translation: 'in' },
+    { word: 'groß', translation: 'li' },
+    { word: 'klein', translation: 'si' },
+    { word: 'gut', translation: 'shizef' },
+    { word: 'klein', translation: 'iyon' },
+    { word: 'stark', translation: 'sequaf' },
+    { word: 'tot', translation: 'olo' },
+    { word: 'darüber hinaus', translation: 'muzam' },
+    { word: 'nah', translation: 'vam' },
+    { word: 'final', translation: 'shatazam' },
+    { word: 'gewünscht', translation: 'lur' },
+    { word: 'übergreifend', translation: 'zelua' },
+    { word: 'sofort', translation: 'ake' },
+    { word: 'böse', translation: 'elyzef' },
+  ];
+
+  colorColumns: string[] = ['word', 'translation', 'meaning'];
+  colorDataSource = [
+    { word: 'Rot', translation: 'ty' },
+    { word: 'Orange', translation: 'kem' },
+    { word: 'Gelb', translation: 'gem' },
+    { word: 'Grün', translation: 'bodori' },
+    { word: 'Blau', translation: 'jodori' },
+    { word: 'Pink', translation: 'kiidori' },
+    { word: 'Grau', translation: 'idori' },
+    { word: 'Braun', translation: 'somdori' },
+    { word: 'Schwarz', translation: 'emdor' },
+    { word: 'Farbe', translation: 'dori' },
+  ];
+
+  directionColumns: string[] = ['word', 'translation', 'meaning'];
+  directionDataSource = [
+    { word: 'über', translation: 'wha' },
+    { word: 'unter', translation: 'fre' },
+    { word: 'hinter', translation: 'hea' },
+  ];
+
+  animalColumns: string[] = ['word', 'translation', 'meaning'];
+  animalDataSource = [
+    { word: 'Tier', translation: 'per' },
+    { word: 'Hase', translation: 'hoper' },
+    { word: 'Huftier', translation: 'dyresper' },
+    { word: 'Nager', translation: 'alieshper' },
+    { word: 'Fisch', translation: 'bokomper' },
+    { word: 'Fledermaus', translation: 'suleshiper' },
+    { word: 'Fuchs', translation: 'kemenper' },
+    { word: 'Amphibie', translation: 'koleoper' },
+    { word: 'Reptil', translation: 'koleshper' },
+    { word: 'Katze', translation: 'goyomper' },
+    { word: 'Vogel', translation: 'budashaper' },
+    { word: 'Wolf', translation: 'meolemper' },
+    { word: 'Insekt', translation: 'quolishper' },
+    { word: 'Bär', translation: 'bamalper' },
+  ];
+
+  otherColumns: string[] = ['word', 'translation', 'meaning'];
+  otherDataSource = [
+    { word: 'und', translation: 'uel' },
+    { word: 'dieses', translation: 'phi' },
+    { word: 'alles, alle', translation: 'zel' },
+    { word: 'für immer', translation: 'maelashi' },
+    { word: 'hier', translation: 'losha' },
+    { word: 'ja', translation: 'felah' },
+    { word: 'nein', translation: 'felahgon' },
+  ];
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

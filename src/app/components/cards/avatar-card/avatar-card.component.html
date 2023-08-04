@@ -1,0 +1,13 @@
+<app-card class="avatar-card">
+    <app-avatar [image]="image" [alternative]="title"></app-avatar>
+    <div class="name-wrapper">
+        <h1>{{title}}</h1>
+        <p *ngIf="subtitle">{{subtitle}}</p>
+        <ng-container *ngIf="subtitles">
+            <p *ngFor="let sub of subtitles">{{sub}}</p>
+        </ng-container>
+        <div>
+            <ng-content></ng-content>
+        </div>
+    </div>
+</app-card>

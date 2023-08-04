@@ -1,0 +1,33 @@
+<app-page-content-header [showBackButton]="false">Charakter-Test</app-page-content-header>
+
+<img class="spoiler-image" src="assets/img/places/kuppel.webp">
+
+<form (submit)="evaluateResult()" class="centered">
+
+    <mat-radio-group *ngFor="let question of questions; let i = index" name="{{question.questionText}}" required>
+        <p class="question-heading">{{question.questionText}}</p>
+        <mat-radio-button value="{{option.optionId}}" *ngFor="let option of question.options"
+            (change)='onChange(option.optionId, i, option.characters)' required>
+            <span class="option-text">
+                {{option.optionText}}
+            </span>
+        </mat-radio-button>
+    </mat-radio-group>
+
+    <mat-divider></mat-divider>
+
+    <button class="result-button" color="accent" mat-raised-button type="submit"
+        [disabled]="currentSelection.length != questions.length">
+        Ergebnis zeigen
+    </button>
+
+    <p *ngIf="currentSelection.length != questions.length">
+        Bitte beantworte alle Fragen.
+    </p>
+
+    <mat-card class="result-card" *ngIf="result"
+        [routerLink]="['/characters/character-showcase/', result.characterType.toString()]">
+        Dein Ergebnis: <label class="result-name">{{result.name}} {{result.lastName}}</label>
+    </mat-card>
+
+</form>

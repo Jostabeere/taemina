@@ -1,0 +1,26 @@
+.heading {
+  background: #9f8a57;
+  background: repeating-linear-gradient(to bottom, #FCEABB 0%, #efc349 50%, #cc8512 70%, #f7c94b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  cursor: pointer;
+  font-size: 16pt;
+}
+
+mat-toolbar {
+  border-bottom: solid 1px rgba(122, 122, 122, 0.12);
+  padding: 16px;
+  height: auto;
+
+  background-color: #392502;
+}
+
+label {
+  background: #9f8a57;
+  background: repeating-linear-gradient(to bottom, #FCEABB 0%, #efc349 50%, #cc8512 70%, #f7c94b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-left: 8px;
+}

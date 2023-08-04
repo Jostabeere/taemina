@@ -1,0 +1,146 @@
+<app-page-content-header [showBackButton]="false">Die Magier</app-page-content-header>
+
+
+
+<p>
+  <img class="rounded-avatar" src="assets/img/misc/taemina-wappen-rund.png">
+  Die Gesamtzahl der Magier wird mit etwa 400.000 sehr niedrig geschätzt, wobei die meisten auch deutlich älter als
+  Menschen werden können.
+</p>
+
+<mat-tab-group color="accent" dynamicHeight>
+  <mat-tab label="Kalender">
+
+    <h2>Tage</h2>
+    <p>
+      Ein Monat hat 28-31 Tage. Ein Tag hat 24 Stunden.
+      Es werden keine Wochentage verwendet, sondern jedes kleine Kind lernt schon früh, dass jeder Tag des Monats einen
+      eigenen Namen trägt.
+    </p>
+
+    <mat-list *ngFor="let day of days; index as i;">
+      <mat-list-item>{{i+1}}. {{day}}</mat-list-item>
+    </mat-list>
+
+    <h2>Jahre</h2>
+    <p>
+      Magier zählen nicht die Jahre, da sie für sie irrelevant sind. Stattdessen werden Jahreszeiten gezählt.
+      Sie werden generell sehr alt und brauchen Mana, um sich am Leben zu halten. Je älter ein Magier, desto höher der
+      Manaverbrauch.
+      Die meisten Magier können mit wenig Aufwand Zeitmagie in Grundzügen so lernen, dass sie ihren Körper besser
+      erhalten können, aber sie sind nicht unsterblich.
+    </p>
+
+    <h2>Datum</h2>
+    <p>
+      Am Ersten Tag der Geschichte befinden wir uns am 1. Tag der 9052. Jahreszeit (Sommeranfang).
+    </p>
+
+  </mat-tab>
+
+  <mat-tab label="Monate">
+
+    <p>
+      Monate sind nach den zwölf Familiartypen benannt. Wer in einem bestimmten Monat geboren wird, hat diesen
+      Familiartypen.
+      Familiare können durch ein Ritual weitergegeben werden, sofern die Person im selben Monat geboren wurde.
+    </p>
+
+    <mat-list *ngFor="let month of months; index as i;">
+      <mat-list-item>{{i+1}}. {{month}}</mat-list-item>
+    </mat-list>
+
+  </mat-tab>
+
+
+  <mat-tab label="Feiertage">
+    <h2>Elementenwende</h2>
+    Es werden jeweils der Tag des Frühlingsanfangs, Sommeranfangs, Herbstanfangs und Winteranfangs speziell gefeiert.
+
+    <h2>Tag der Ersten: Feuertag im Katzenmonat</h2>
+    Der Geburtstag der Ersten ist ein Fest der Lebensfreude.
+
+    <h2>Sommersonnenwende</h2>
+    Da die Magier mit den Elementen verbunden sind, ist dies ein besonderer Tag für sie.
+
+    <h2>Tag der Trennung: Schattentag im Huftiermonat</h2>
+    Ein Trauerfest um dem Tag zu gedenken, an dem die Erste verschwand und sich die Magier von den Menschen abwandten.
+
+    <h2>Tag der Erneuerung</h2>
+    Der erste Magierkönig vereinte die zerstreuten Magier und bildete das erste Magierkönigreich.
+
+    <h2>Wintersonnenwende</h2>
+    Da die Magier mit den Elementen verbunden sind, ist dies ein besonderer Tag für sie.
+  </mat-tab>
+
+  <mat-tab label="Riten">
+    <p>
+      Ereignisse im Leben eines Magiers weichen von denen der Menschen ab.
+    </p>
+
+    <h2>Geburt</h2>
+    Magier feiern keinen Geburtstag. Stattdessen feiern sie die Elementenwende für die Jahreszeit, in der sie geboren
+    sind.
+
+    <h2>Erwachen</h2>
+    Im jungen Erwachsenenalter zeigt sich normalerweise die Magie zum ersten Mal.
+    Die erste Magie ist immer die Quellmagie und man feiert sie normalerweise mit Freunden und Familie.
+    Quellmagie kann vererbt werden, allerdings auch manchmal von weit entfernten Verwandten. Das Initiationsritual hat 3
+    Ausgänge: Bestehen, Vergessen oder Tod.
+    Jene, die sich für das Vergessen entscheiden, entsagen für immer der Magie. Ihnen werden die Erinnerungen geraubt
+    und dafür neue gegeben.
+    Im Gegenzug können sie unter den Menschen leben und bekommen eine neue Familie zugewiesen.
+
+    <h2>Familiartausch</h2>
+    Wenn beide Magier einwilligen, kann mit einem kräftezehrenden magischen Ritual der Familiar des jeweils anderen
+    angenommen werden.
+    Beide Familiare müssen ihre neuen Partner akzeptieren, ansonsten wird das Ritual scheitern.
+    Dazu werden den Familiaren normalerweise große Mengen an Magie als Gaben dargeboten.
+
+    <h2>Heirat</h2>
+    Magier heiraten nicht. Die Gründung einer Familie ist eher selten und steht für sie nicht im Fokus. Sie haben
+    generell
+    wenig Nachwuchs.
+
+    <h2>Seelenverbindung</h2>
+    <p>
+      Es ist möglich, magische Seelen miteinander zu verknüpfen, sodass sie für immer verbunden sind.
+      Je stärker die Bande sind, desto verschwimmt die Grenze zwischen zwei Individuen zu einem.
+      Seelenverbindungen zeigen sich in Form einer magischen Zeichnung im Halsbereich, aus der auch ablesbar ist, um
+      welche
+      Verdindung es sich handelt.
+      Es gibt verschiedene Varianten:
+    </p>
+
+    <h3>-Seelenbande</h3>
+    <p>
+      Beide Parteien können sich über größere Distanzen aufspüren und den Zustand des anderen erkennen.
+    </p>
+
+    <h3>-Seelenfesseln</h3>
+    <p>
+      Beide spüren, was der andere spüren. Der Tod des Einen hat den Tod des Anderen zur Folge.
+      Diese Form wird für gewöhnlich als Absicherung vor diplomatischen Eskalationen oder als Fluch verwendet.
+    </p>
+
+    <h3>-Seelenketten</h3>
+    <p>
+      Beide spüren, was der andere spürt. Diese Variante kann auch gegenseitiges Gedankenlesen beinhalten.
+      Ein echter Tod ist nur möglich, wenn beide sterben. Stirbt nur einer, bleibt die Seele in der Welt der Lebenden
+      erhalten.
+      Mit größerem Aufwand ist sogar eine Wiederbelebung möglich.
+    </p>
+
+    <h2>Beerdingungen</h2>
+    <p>
+      Nach dem Tod wandelt sich der Körper eines Magiers in einen Manakristall, der dessen übrige Energie enthält.
+      Dieser wird den Elementen zurückgegeben oder für einen höheren Zweck verwendet. Als Datum wird häufig der Lichttag
+      ausgewählt, um Hoffnung zu spenden.
+    </p>
+  </mat-tab>
+
+  <mat-tab label="Redewendungen">
+    <app-fact-table [displayedColumns]="displayedColumns" [facts]="facts"></app-fact-table>
+  </mat-tab>
+
+</mat-tab-group>

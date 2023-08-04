@@ -1,0 +1,58 @@
+<div *ngIf="character" class="card-container">
+
+  <app-avatar-card [image]="character.image" [title]="getCharacterTitle()"
+    [subtitles]="getCharacterSubtitles()"></app-avatar-card>
+
+  <app-card *ngIf="character.description" heading="Beschreibung">
+    <app-description-card [description]="character.description"></app-description-card>
+  </app-card>
+
+  <app-card *ngIf="character.past" heading="Herkunft">
+    <app-description-card [description]="character.past"></app-description-card>
+  </app-card>
+
+  <app-card *ngIf="character.problem" heading="Herausforderungen">
+    <app-description-card [description]="character.problem"></app-description-card>
+  </app-card>
+
+  <app-card *ngIf="character.development" heading="Entwicklung">
+    <app-description-card [description]="character.development"></app-description-card>
+  </app-card>
+
+  <app-card heading="Fakten">
+    <app-personality-card [character]="character" [specialization]="specialization"></app-personality-card>
+  </app-card>
+
+  <app-card *ngIf="character.traits && character.traits.length > 0" heading="Eigenschaften">
+    <app-traits-card [traits]="character.traits"></app-traits-card>
+  </app-card>
+
+  <app-card class="citation-card" *ngIf="character.citation" class="fullwidth-card">
+    <h2>Zitat</h2>
+    <mat-card-content>
+      <mat-icon>format_quote</mat-icon>
+      <p>{{character.citation}}</p>
+    </mat-card-content>
+  </app-card>
+
+  <app-card *ngIf="character.looks" heading="Aussehen">
+    <app-looks-card [looks]="character.looks" [symbol]="specialization?.iconName"></app-looks-card>
+  </app-card>
+
+  <app-card *ngIf="character.skills && character.skills.length > 0" heading="Fähigkeiten">
+    <app-skill-card [skills]="character.skills"></app-skill-card>
+  </app-card>
+
+  <app-card *ngIf="character.classes" heading="Unterricht">
+    <app-classes-card *ngIf="character.classes" [classes]="character.classes"></app-classes-card>
+  </app-card>
+
+  <app-card *ngIf="character.loveInterests" heading="Shippings">
+    <app-love-interest *ngFor="let loveInterest of character.loveInterests"
+      [loveInterest]="loveInterest"></app-love-interest>
+  </app-card>
+
+  <app-avatar-card *ngFor="let pet of character.pets" [image]="pet.image" [title]="pet.name"
+    [subtitle]="pet.description"></app-avatar-card>
+
+</div>

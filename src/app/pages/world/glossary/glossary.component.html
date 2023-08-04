@@ -1,0 +1,28 @@
+<app-page-content-header [showBackButton]="false">Glossar</app-page-content-header>
+
+<p>Hier werden weitere Begriffe gelistet, die in keine der anderen Kategorien passen.</p>
+
+<mat-grid-list class="grid-characters" cols="3" gutterSize="10px" rowHeight="2:1">
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+        <ng-container matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>
+            Begriff
+          </mat-header-cell>
+          <mat-cell *matCellDef="let definition">
+            {{definition.name}}
+          </mat-cell>
+        </ng-container>
+      
+        <ng-container matColumnDef="description">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>
+            Beschreibung
+          </mat-header-cell>
+          <mat-cell *matCellDef="let definition">
+            {{definition.description}}
+          </mat-cell>
+        </ng-container>
+      
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</mat-grid-list>

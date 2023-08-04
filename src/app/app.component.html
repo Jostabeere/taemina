@@ -1,0 +1,146 @@
+<app-header #headerComponentRefChild (toggleDrawer)="toggleDrawer()"></app-header>
+<mat-drawer-container class="sidenav-container" [hasBackdrop]="false">
+  <mat-drawer #drawer [mode]="'side'">
+    <mat-list role="list">
+
+      <span class="sidenav-header">Home</span>
+
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="" (click)='onNavItemClick()'>
+          <mat-icon>home</mat-icon>
+          <span>Startseite</span>
+        </button>
+      </mat-list-item>
+
+      <span class="sidenav-header">Allgemein</span>
+
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/characters" (click)='onNavItemClick()'>
+          <mat-icon>tag_faces</mat-icon>
+          <span>Charaktere</span>
+        </button>
+      </mat-list-item>
+
+      <mat-list-item role="listitem">
+        <button mat-button routerLink='/common/test' (click)='onNavItemClick()'>
+          <mat-icon>quiz</mat-icon>
+          <span>Charakter-Test</span>
+        </button>
+      </mat-list-item>
+
+      <span class="sidenav-header">Mahoa</span>
+
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/mahoa/runes" (click)='onNavItemClick()'>
+          <mat-icon>font_download</mat-icon>
+          <span>Runenalphabet</span>
+        </button>
+      </mat-list-item>
+
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/mahoa/vocabulary" (click)='onNavItemClick()'>
+          <mat-icon>sort_by_alpha</mat-icon>
+          <span>Vokabular</span>
+        </button>
+      </mat-list-item>
+
+      <span class="sidenav-header">Magie</span>
+
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="magic/sources" (click)='onNavItemClick()'>
+          <mat-icon>flare</mat-icon>
+          <span>Quellmagien</span>
+        </button>
+      </mat-list-item>
+
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="magic/statistics" (click)='onNavItemClick()'>
+          <mat-icon>insights</mat-icon>
+          <span>Statistiken</span>
+        </button>
+      </mat-list-item>
+
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="magic/artifacts" (click)='onNavItemClick()'>
+          <mat-icon>diamond</mat-icon>
+          <span>Artefakte</span>
+        </button>
+      </mat-list-item>
+
+      <span class="sidenav-header">Welt</span>
+
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/world/map" (click)='onNavItemClick()'>
+          <mat-icon>explore</mat-icon>
+          <span>Karte</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/animals" (click)='onNavItemClick()'>
+          <mat-icon>cruelty_free</mat-icon>
+          <span>Tiere</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/world/food" (click)='onNavItemClick()'>
+          <mat-icon>restaurant_menu</mat-icon>
+          <span>Essen und Getränke</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/world/glossary" (click)='onNavItemClick()'>
+          <mat-icon>book</mat-icon>
+          <span>Glossar</span>
+        </button>
+      </mat-list-item>
+
+      <span class="sidenav-header">Kulturen</span>
+
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/cultures/mages" (click)='onNavItemClick()'>
+          <mat-icon>star</mat-icon>
+          <span>Magier</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/cultures/humans" disabled>
+          <mat-icon>group</mat-icon>
+          <span>Menschen</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/cultures/ilben" disabled>
+          <mat-icon>gesture</mat-icon>
+          <span>Ilben</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/cultures/nixen" disabled>
+          <mat-icon>phishing</mat-icon>
+          <span>Nixen</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/cultures/forest-walkers" disabled>
+          <mat-icon>park</mat-icon>
+          <span>Waldwandler</span>
+        </button>
+      </mat-list-item>
+
+      <span class="sidenav-header">Sonstiges</span>
+
+      <mat-list-item role="listitem">
+        <button mat-button routerLink="/imprint" (click)='onNavItemClick()'>
+          <mat-icon>sms</mat-icon>
+          <span>Impressum</span>
+        </button>
+      </mat-list-item>
+
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content id="drawer-content" #drawerContent>
+    <div class="content" role="main">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

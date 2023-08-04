@@ -1,0 +1,13 @@
+<mat-list>
+  <div *ngFor="let skill of skills">
+    <div class="skill-header">
+      <mat-icon *ngFor="let category of skill.category" mat-list-icon
+                matTooltip="{{category}}">{{getIcon(category)}}</mat-icon>
+      {{skill.name}}
+    </div>
+    <div>
+      <p>{{skill.description}}</p>
+    </div>
+    <mat-divider *ngIf="skills.indexOf(skill) != skills.length - 1"></mat-divider>
+  </div>
+</mat-list>

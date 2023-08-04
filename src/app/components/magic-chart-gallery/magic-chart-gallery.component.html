@@ -1,0 +1,23 @@
+<div *ngFor="let galleryData of data; index as i;" class="chartWrapper">
+  <div class="chartHeader">
+    <app-specialization-icon [specialization]="galleryData.specialization" [showLabel]=true></app-specialization-icon>
+  </div>
+  <ngx-charts-polar-chart
+    (select)="onSelect($event)"
+    [animations]=false
+    [curve]="polarShape"
+    [labelTrim]=false
+    [results]="[galleryData.chartData]"
+    [roundDomains]=true
+    [scheme]="'picnic'"
+    [showSeriesOnHover]=true
+    [showXAxisLabel]=false
+    [showYAxisLabel]=false
+    [title]="galleryData.specialization.name"
+    [xAxisLabel]="galleryData.specialization.name"
+    [xAxis]="xAxis"
+    [yAxisMinScale]=10
+    [yAxis]="yAxis">
+  </ngx-charts-polar-chart>
+</div>
+

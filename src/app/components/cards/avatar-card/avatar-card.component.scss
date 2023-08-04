@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  flex: 1 1 auto;
+  margin: 5px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .name-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+  }
+}

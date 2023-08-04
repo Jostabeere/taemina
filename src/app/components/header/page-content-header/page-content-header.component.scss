@@ -1,0 +1,29 @@
+button {
+  background-color: white !important;
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.1) !important;
+  margin-right: 8px;
+}
+
+.mat-divider {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+div {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  margin-bottom: 16px;
+  min-width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  :host {
+    align-items: left;
+  }
+}

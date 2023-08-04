@@ -1,0 +1,13 @@
+<div class="trait-collection-wrapper">
+  <div *ngFor="let trait of traits" class="trait-wrapper">
+    <mat-icon [class]="trait.positive ? 'positive-trait-icon' : 'negative-trait-icon'"
+              class="trait-icon">{{trait.icon}}</mat-icon>
+    <div class="flexible-container">
+      {{trait.key}}
+    </div>
+    <h2>
+      {{trait.value}}
+    </h2>
+  </div>
+</div>
+

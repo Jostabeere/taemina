@@ -1,0 +1,13 @@
+.artifact-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+
+    h1,
+    p {
+        text-align: center;
+        width: 100%;
+    }
+}

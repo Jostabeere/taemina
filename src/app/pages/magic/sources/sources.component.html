@@ -1,0 +1,6 @@
+<app-page-content-header [showBackButton]="false">Quellmagien</app-page-content-header>
+
+<div class="container">
+      <app-specialization-icon *ngFor="let specialization of specializations; index as i;" [showLabel]=true
+            [specialization]="specialization"></app-specialization-icon>
+</div>

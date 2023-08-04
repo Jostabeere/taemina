@@ -1,0 +1,11 @@
+<div class="container-love-interest">
+  <h2>
+    <mat-icon [style.--interest]="loveInterest.interest" class="love-color"
+      matTooltip="{{loveInterest.interest}} von 10">
+      favorite
+    </mat-icon>
+    &nbsp; {{loveInterest.person}}
+  </h2>
+
+  <app-thin-slider [value]="loveInterest.interest.toString()"></app-thin-slider>
+</div>
