@@ -1,3 +1,7 @@
+form {
+    padding: 12px;
+}
+
 .mat-radio-group {
     display: flex;
     flex-direction: column;
@@ -39,6 +43,7 @@ mat-divider {
 .result-card {
     display: flex;
     font-size: 14pt;
+    padding: 12px;
 
     &:hover {
         box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.6), 0px 1px 1px 0px rgba(0, 0, 0, 0.4), 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
@@ -50,12 +55,14 @@ mat-divider {
         font-weight: 500;
         text-decoration: underline;
         margin-left: 8px;
+        margin-top: 8px;
     }
 }
 
 .spoiler-image {
-    margin-bottom: 1em;
+    height: 250px;
     max-width: 600px;
+    object-fit: cover;
     width: 100%;
 }
 

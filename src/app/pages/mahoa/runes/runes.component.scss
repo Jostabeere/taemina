@@ -26,8 +26,11 @@ div {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 24px;
+    padding: 12px;
 
     a {
+        background-color: white;
+        padding: 12px;
         height: fit-content;
         width: fit-content;
     }

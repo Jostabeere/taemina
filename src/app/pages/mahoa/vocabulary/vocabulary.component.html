@@ -1,7 +1,6 @@
 <app-page-content-header [showBackButton]="false">Vokabular</app-page-content-header>
 
-
-<p>Nomen</p>
+<h3>Nomen</h3>
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="word">
@@ -23,7 +22,7 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
-<p>Verben</p>
+<h3>Verben</h3>
 
 <table mat-table [dataSource]="verbDataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="word">
@@ -45,7 +44,7 @@
     <tr mat-row *matRowDef="let row; columns: verbColumns;"></tr>
 </table>
 
-<p>Adjektive</p>
+<h3>Adjektive</h3>
 
 <table mat-table [dataSource]="adjectiveDataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="word">
@@ -67,7 +66,7 @@
     <tr mat-row *matRowDef="let row; columns: adjectiveColumns;"></tr>
 </table>
 
-<p>Farben</p>
+<h3>Farben</h3>
 
 <table mat-table [dataSource]="colorDataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="word">
@@ -89,7 +88,7 @@
     <tr mat-row *matRowDef="let row; columns: colorColumns;"></tr>
 </table>
 
-<p>Richtungen</p>
+<h3>Richtungen</h3>
 
 <table mat-table [dataSource]="directionDataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="word">
@@ -111,7 +110,7 @@
     <tr mat-row *matRowDef="let row; columns: directionColumns;"></tr>
 </table>
 
-<p>Tiere</p>
+<h3>Tiere</h3>
 
 <table mat-table [dataSource]="animalDataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="word">
@@ -133,7 +132,7 @@
     <tr mat-row *matRowDef="let row; columns: animalColumns;"></tr>
 </table>
 
-<p>Weitere</p>
+<h3>Weitere</h3>
 
 <table mat-table [dataSource]="otherDataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="word">

@@ -24,13 +24,6 @@ h3 {
   margin-top: 16px;
 }
 
-/* Responsive Styles
-@media screen and (max-width: 767px) {
-  :host {
-    align-items: center;
-  }
-}*/
-
 p:first-child {
   margin-top: 16px;
 }
@@ -42,4 +35,12 @@ p:first-child {
 
 .rounded-avatar {
   max-width: 30px;
+}
+
+app-page-content-header+p {
+  padding: 12px;
+}
+
+.mat-tab-group {
+  padding: 12px;
 }

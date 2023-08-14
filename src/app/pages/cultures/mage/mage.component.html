@@ -1,15 +1,13 @@
 <app-page-content-header [showBackButton]="false">Die Magier</app-page-content-header>
 
-
-
 <p>
-  <img class="rounded-avatar" src="assets/img/misc/taemina-wappen-rund.png">
-  Die Gesamtzahl der Magier wird mit etwa 400.000 sehr niedrig geschätzt, wobei die meisten auch deutlich älter als
+  <img class="rounded-avatar" src="assets/img/misc/taemina-wappen-rund.webp">
+  Die Gesamtzahl der Magier wird mit etwa 400.000 sehr niedrig geschätzt, wobei sie oft auch deutlich älter als
   Menschen werden können.
 </p>
 
-<mat-tab-group color="accent" dynamicHeight>
-  <mat-tab label="Kalender">
+<mat-tab-group color="accent" dynamicHeight class="mat-tab-group">
+  <mat-tab label="Kalender" class="mat-tab">
 
     <h2>Tage</h2>
     <p>
@@ -38,12 +36,13 @@
 
   </mat-tab>
 
-  <mat-tab label="Monate">
+  <mat-tab label="Monate" class="mat-tab">
 
     <p>
-      Monate sind nach den zwölf Familiartypen benannt. Wer in einem bestimmten Monat geboren wird, hat diesen
-      Familiartypen.
-      Familiare können durch ein Ritual weitergegeben werden, sofern die Person im selben Monat geboren wurde.
+      Jeder Monat wird von einer Familiarklasse beherrscht. Somit entscheidet der Monat, in dem ein Magier geboren
+      wurde, welchen Familiar er beschwören kann.
+      Ansonsten können Familiare auch durch ein komplexes Ritual weitergegeben werden, sofern die Person im selben Monat
+      geboren wurde.
     </p>
 
     <mat-list *ngFor="let month of months; index as i;">
@@ -53,7 +52,7 @@
   </mat-tab>
 
 
-  <mat-tab label="Feiertage">
+  <mat-tab label="Feiertage" class="mat-tab">
     <h2>Elementenwende</h2>
     Es werden jeweils der Tag des Frühlingsanfangs, Sommeranfangs, Herbstanfangs und Winteranfangs speziell gefeiert.
 
@@ -73,7 +72,7 @@
     Da die Magier mit den Elementen verbunden sind, ist dies ein besonderer Tag für sie.
   </mat-tab>
 
-  <mat-tab label="Riten">
+  <mat-tab label="Riten" class="mat-tab">
     <p>
       Ereignisse im Leben eines Magiers weichen von denen der Menschen ab.
     </p>
@@ -139,7 +138,7 @@
     </p>
   </mat-tab>
 
-  <mat-tab label="Redewendungen">
+  <mat-tab label="Redewendungen" class="mat-tab">
     <app-fact-table [displayedColumns]="displayedColumns" [facts]="facts"></app-fact-table>
   </mat-tab>
 

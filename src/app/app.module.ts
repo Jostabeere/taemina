@@ -121,7 +121,6 @@ import { ThinSliderComponent } from './components/thin-slider/thin-slider.compon
     MatOptionModule,
     MatToolbarModule,
     MatGridListModule,
-    MatTooltipModule,
     MatSortModule,
     MatTabsModule,
     NgxChartsModule,
