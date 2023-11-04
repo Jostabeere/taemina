@@ -893,7 +893,7 @@ export const characters: Character[] = [
     traits: [
       {
         key: Extent.often,
-        value: "mütterlich",
+        value: "umsorgend",
         icon: "escalator_warning",
         positive: true,
       },

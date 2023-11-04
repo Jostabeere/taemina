@@ -1,5 +1,20 @@
-img {
+img,
+svg {
     display: flex;
     min-width: 800px;
+    height: auto;
     width: 100%;
+}
+
+svg a {
+    fill: rgb(227, 155, 82);
+    fill-opacity: 0;
+    stroke: rgb(175, 118, 61);
+    stroke-width: 3px;
+    opacity: 0.9;
+
+    &:hover {
+        cursor: pointer;
+        fill-opacity: 0.1;
+    }
 }
