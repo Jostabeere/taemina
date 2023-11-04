@@ -4,15 +4,37 @@
   margin: 5px;
 }
 
+mat-card {
+  flex: 1 1 auto;
+  flex-direction: row;
+  padding: 16px;
+}
+
 p {
   margin-bottom: 0;
 }
 
+.name-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+app-avatar {
+  display: flex;
+}
+
 @media screen and (max-width: 500px) {
-  .name-wrapper {
-    flex-direction: row;
+  mat-card {
+    flex-direction: column;
+  }
+
+  app-avatar {
     justify-content: center;
-    flex-wrap: wrap;
+  }
+
+  .name-wrapper {
     text-align: center;
     width: 100%;
   }

@@ -682,19 +682,13 @@ export const characters: Character[] = [
     traits: [
       {
         key: Extent.always,
-        value: "willensstark",
+        value: "ehrlich",
         icon: "thumbs_up_down",
         positive: true,
       },
       {
-        key: Extent.often,
-        value: "ruhig",
-        icon: "self_improvement",
-        positive: true,
-      },
-      {
         key: Extent.always,
-        value: "liebt Pflanzen",
+        value: "Pflanzenfan",
         icon: "nest_eco_leaf",
         positive: true,
       },
@@ -713,15 +707,20 @@ export const characters: Character[] = [
     ],
     loveInterests: [
       {
+        person: CharacterType.thea,
+        interest: 10,
+        notes: "",
+      },
+      {
         person: CharacterType.lior,
-        interest: 3,
+        interest: 2,
         notes: "",
       },
     ],
     looks: {
       hairColor: {
         color: "#50f8d1",
-        description: "Türkisblaues Haar, Flechtfrisur",
+        description: "Türkisblaues Haar, Hochsteck-Dutt-Flechtfrisur",
       },
       eyeColor: {
         color: "#ffa42c",
@@ -731,11 +730,12 @@ export const characters: Character[] = [
       body: "174cm groß",
     },
     magic: MagicType.plant,
-    classes: ["Pflanzenmagie", "Erdmagie"],
+    classes: ["Pflanzenmagie", "Erdmagie", "Luftmagie"],
     mbti: "ISTP",
-    past: "Hat unschöne Erfahrungen mit Tieren gemacht. Sie mag Lesen und klassische Musik, hasst Lärm, liebt Pflanzen " +
-      "vor allem Kakteen und fleischfressende Pflanzen. Sie hat keinen Familiar, da sie im Insektenmonat geboren ist. Sie hat einen älteren Bruder, der ebenfalls Pflanzen mag.",
-    description: "",
+    past: "Ivys Eltern haben sie liebevoll in einem kleinen Dorf im Magierreich großgezogenn. " +
+      "Sie hat keinen Familiar, da sie im Insektenmonat geboren ist. Sie hat einen älteren Bruder, der ebenfalls Pflanzen mag.",
+    description: "Ivy ist eine Pflanzenmagierin und hat als solche eine besondere Beziehung zu Pflanzen, insbesondere gefallen ihr Kakteen und fleischfressende Pflanzen. Für Tiere oder Insekten hat sie hingegen nicht viel übrig." +
+      "Sie gibt sich gerne mal aufbrausend, aber ist eine loyale Freundin. Für jeden, den sie kennt, hat sie mindestens einen unfreiwilligen Spitznamen. Sie steht außerdem auf klassische Musik, aber hasst Lärm. ",
     pets: []
   },
   {
@@ -1106,10 +1106,9 @@ export const characters: Character[] = [
     magic: MagicType.luck,
     classes: ["Glücksmagie", "Telepathie"],
     mbti: "ESFP",
-    past: "Unbekannte Herkunft.",
-    problem: "Hat jede Woche einen neuen Schwarm. Sie ist der Meinung, wenn Adryan schon nicht ihr gehört soll wenigstens Sora mit ihm zusammen kommen.",
-    description: "Heimliche Heldin. Sabotiert durch Tollpatschigkeit bzw. versteckte Glücksmagie Halonas " +
-      "Ranschmeißversuche. Unterstützt Ship Halona und Adryan nicht!",
+    past: "Wenn Valda nach ihrer Herkunft gefragt wird, nennt sie immer Orte, die niemand zu kennen scheint. Außerdem verstrickt sie sich bei Richtungsangaben ständig in Widersprüchen.",
+    problem: "Die Männerwelt stellt für Valda eine große Motivation dar. Sie hat jede Woche einen neuen Schwarm. Aber sie kann auch teilen: Wenn Adryan schon nicht zu ihr gehören will, soll wenigstens Sora ihn haben.",
+    description: "Heimliche Heldin. Sabotiert durch Tollpatschigkeit bzw. versteckte Glücksmagie Halonas Ranschmeißversuche. Unterstützt Ship Halona und Adryan nicht!",
   },
   {
     characterType: CharacterType.lior,
