@@ -37,10 +37,6 @@ export class MapComponent implements OnInit {
     }
   }
 
-  setSelected(value: string) {
-    this.result = value;
-  }
-
   @HostListener('click', ['$event'])
   onMouseClick(e: any): void {
     if (this.paragraph != null) {
@@ -49,7 +45,7 @@ export class MapComponent implements OnInit {
         this.paragraph.nativeElement.style.display = "inline-block";
         this.paragraph.nativeElement.style.top = e.clientY - 75 + "px";
         this.paragraph.nativeElement.style.left = e.clientX - 100 + "px";
-        this.setSelected(title);
+        this.result = title;
       } else {
         this.paragraph.nativeElement.style.display = "none";
       }
@@ -57,9 +53,9 @@ export class MapComponent implements OnInit {
   }
 
   getTitle(e: any): string | null {
-    //return e.target.parentNode.getAttribute("title");
-    if (e.target.closest('a') != null) {
-      return e.target.closest('a').getAttribute("title");
+    const closestNode = e.target.closest('a');
+    if (closestNode != null) {
+      return closestNode.getAttribute("title");
     }
     return null;
   }

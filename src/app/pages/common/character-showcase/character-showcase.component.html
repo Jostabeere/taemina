@@ -3,8 +3,19 @@
   <app-avatar-card [image]="character.image" [title]="getCharacterTitle()"
     [subtitles]="getCharacterSubtitles()"></app-avatar-card>
 
+  <app-card class="citation-card" *ngIf="character.citation" class="fullwidth-card">
+    <mat-card-content>
+      <mat-icon>format_quote</mat-icon>
+      <p>{{character.citation}}</p>
+    </mat-card-content>
+  </app-card>
+
   <app-card *ngIf="character.description" heading="Beschreibung">
     <app-description-card [description]="character.description"></app-description-card>
+  </app-card>
+
+  <app-card *ngIf="character.fears" heading="Ängste">
+    <app-list-card *ngIf="character.fears" [listItems]="character.fears"></app-list-card>
   </app-card>
 
   <app-card *ngIf="character.past" heading="Herkunft">
@@ -27,14 +38,6 @@
     <app-traits-card [traits]="character.traits"></app-traits-card>
   </app-card>
 
-  <app-card class="citation-card" *ngIf="character.citation" class="fullwidth-card">
-    <h2>Zitat</h2>
-    <mat-card-content>
-      <mat-icon>format_quote</mat-icon>
-      <p>{{character.citation}}</p>
-    </mat-card-content>
-  </app-card>
-
   <app-card *ngIf="character.looks" heading="Aussehen">
     <app-looks-card [looks]="character.looks" [symbol]="specialization?.iconName"></app-looks-card>
   </app-card>
@@ -44,7 +47,7 @@
   </app-card>
 
   <app-card *ngIf="character.classes" heading="Unterricht">
-    <app-classes-card *ngIf="character.classes" [classes]="character.classes"></app-classes-card>
+    <app-list-card *ngIf="character.classes" [listItems]="character.classes"></app-list-card>
   </app-card>
 
   <app-card *ngIf="character.loveInterests" heading="Shippings">

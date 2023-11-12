@@ -21,6 +21,7 @@ export class Character extends Creature {
   past?: string;
   problem?: string;
   development?: string;
+  fears?: string[];
   image?: string;
   skills: Skill[];
   traits: Trait[];
@@ -33,7 +34,7 @@ export class Character extends Creature {
 
 
   constructor(characterType: CharacterType, name: string, specialName: string, lastName: string, age: string, birthday: string, citation: string, meanings: Meaning[],
-    mbti: string, past: string, problem: string, development: string, description: string, image: string,
+    mbti: string, past: string, problem: string, development: string, description: string, image: string, fears: string[],
     skills: Skill[], traits: Trait[], classes: string[], looks: Looks, magic: MagicType, loveInterests: LoveInterest[], pets: Pet[]) {
     super(name, description, image);
 
@@ -47,6 +48,7 @@ export class Character extends Creature {
     this.mbti = mbti;
     this.past = past;
     this.problem = problem;
+    this.fears = fears;
     this.development = development;
     this.image = image;
     this.skills = skills;

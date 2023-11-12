@@ -36,7 +36,7 @@ import { routes } from "./app-routing.module";
 import { CharactersTableComponent } from './components/table/characters-table/characters-table.component';
 import { MatTableModule } from "@angular/material/table";
 import { LooksCardComponent } from './components/cards/looks-card/looks-card.component';
-import { ClassesCardComponent } from './components/cards/classes-card/classes-card.component';
+import { ListCardComponent } from './components/cards/list-card/list-card.component';
 import { PersonalityCardComponent } from './components/cards/personality-card/personality-card.component';
 import { MatMenuModule } from "@angular/material/menu";
 import { CardComponent } from './components/cards/card/card.component';
@@ -84,7 +84,7 @@ import { ThinSliderComponent } from './components/thin-slider/thin-slider.compon
     DescriptionCardComponent,
     CharactersTableComponent,
     LooksCardComponent,
-    ClassesCardComponent,
+    ListCardComponent,
     PersonalityCardComponent,
     ImprintComponent,
     CardComponent,

@@ -122,6 +122,7 @@ export const characters: Character[] = [
     past: "Sora ist bei ihrer Mutter aufgewachsen. Ihr Vater ist an einer mysteriösen Krankheit gestorben, die allerdings nur eine List war, um sie zu schützen. Sie möchte schon von Kindesbeinen an auf die Taemina-Akademie gehen. Sie ist eine Freundin der Menschen und hofft, dass Menschen und Magier sich wieder besser verstehen lernen.",
     problem: "Rückschläge nagen schnell an ihrem Selbstvertrauen. Dann plagen sie Selbstzweifel und sie schottet sich ab.",
     development: "Sie muss lernen, selbstbewusster zu werden und mehr an sich zu glauben.",
+    fears: ["Versagen", "Dunkelheit"],
     description: "Sora ist unsere willensstarke Protagonistin. Normalerweise ist sie anderen gegenüber aufgeschlossen, manchmal sogar fast schon zu vertrauensselig. Sie findet schnell Freunde, aber lässt sich auch leicht verunsichern. " +
       "Ihre Lieblingsfächer sind Magische Bande gefolgt von Telepathie. Sie hat schon seit sie denken kann Angst im Dunkeln.",
     pets: [{
@@ -230,6 +231,7 @@ export const characters: Character[] = [
     past: "Sein Großvater ging als der mächtigste, aber auch wahnsinnigste Schattenmagier in die Geschichte ein. Adryans Eltern sind keine Schattenmagier und fürchten sich vor seinen Fähigkeiten.",
     problem: "Höhenangst, Engstirnigkeit.",
     description: "Adryan spricht fließend Mahoa und versteht daher auch den Inhalt von Zaubersprüchen.",
+    fears: ["Höhen", "Andere zu verletzen"],
     image: "assets/img/character/adryan.jpg",
     development: "Macht der Freundschaft.",
     pets: [{
@@ -330,6 +332,7 @@ export const characters: Character[] = [
     classes: ["Feuermagie", "Metamorphose", "Kemu"],
     mbti: "ENTJ",
     description: "",
+    fears: ["Erwartungen nicht gerecht zu werden", "Abweisung"],
     pets: [{
       name: "Arget",
       description: "Ein junger Drachenfamiliar, der in einem langen Ohrring sitzt.",
@@ -432,6 +435,7 @@ export const characters: Character[] = [
     past: "Hängt an Adryan und hat seiner Familie Treue geschworen.",
     problem: "Schattendämonen",
     description: "Missgünstig gegenüber Sora.",
+    fears: ["allein zu sein", "abstoßend zu sein", "sich selbst zu verlieren"],
     pets: [{
       name: "Krähe",
       description: "Ein vernachlässigter, unglücklicher Familiar, der in ihrer Haarspange haust.",
@@ -512,6 +516,7 @@ export const characters: Character[] = [
     },
     magic: MagicType.time,
     classes: ["Zeitmagie", "Wahrsagerei", "Kemu"],
+    fears: ["es im Leben zu nichts zu bringen"],
     mbti: "ESTJ",
     past: "Ist Sohn des königlichen Pferdeknechts und einer Leibwächterin am Hofe des Königs von Marmotas, gab in Kindheit Problem mit Prinz.",
     problem: "Er möchte seitdem Rache nehmen. Er möchte Macht und selbst König sein.",
@@ -581,6 +586,7 @@ export const characters: Character[] = [
     mbti: "INFP",
     past: "Sohn einer Adeligenfamilie. Familienmitglied ist in der Leibgarde der Frau des Königs.",
     problem: "Will Anerkennung. Er und Albert sind gute Freunde.",
+    fears: ["Kontrollverlust"],
     description: "",
     pets: []
   },
@@ -658,6 +664,7 @@ export const characters: Character[] = [
     mbti: "ISFJ",
     past: "Stumm geboren.",
     description: "",
+    fears: ["Massen", "vor vielen Leuten sprechen zu müssen"],
     pets: [{
       name: "Renesmee",
       description: "Ein zutraulicher Kolibrifamiliar.",
@@ -732,6 +739,7 @@ export const characters: Character[] = [
     magic: MagicType.plant,
     classes: ["Pflanzenmagie", "Erdmagie", "Luftmagie"],
     mbti: "ISTP",
+    fears: ["ignoriert zu werden", "Veränderung"],
     past: "Ivys Eltern haben sie liebevoll in einem kleinen Dorf im Magierreich großgezogenn. " +
       "Sie hat keinen Familiar, da sie im Insektenmonat geboren ist. Sie hat einen älteren Bruder, der ebenfalls Pflanzen mag.",
     description: "Ivy ist eine Pflanzenmagierin und hat als solche eine besondere Beziehung zu Pflanzen, insbesondere gefallen ihr Kakteen und fleischfressende Pflanzen. Für Tiere oder Insekten hat sie hingegen nicht viel übrig." +
@@ -816,6 +824,7 @@ export const characters: Character[] = [
     magic: MagicType.ice,
     classes: ["Eismagie", "Magische Bande", "Translokation"],
     mbti: "ESFJ",
+    fears: ["Liebe"],
     pets: [{
       name: "Liebling",
       description: "Ein wunderschöner Schmetterlingsfamilar.",
@@ -938,6 +947,7 @@ export const characters: Character[] = [
     magic: MagicType.empathy,
     classes: ["Empathie", "Verstärkungsmagie"],
     mbti: "ISTJ",
+    fears: ["Abweisung", "verlassen zu werden"],
     past: "Bereits im zweiten Schuljahr.",
     description: "",
     pets: []
@@ -1004,6 +1014,7 @@ export const characters: Character[] = [
     mbti: "ESTP",
     past: "Bereits im zweiten Schuljahr. Er geht nicht auf Partys, er ist die Party. Und das war schon immer so.",
     description: "",
+    fears: ["Schuld", "Konfrontationen"],
     pets: []
   },
   {
@@ -1106,6 +1117,7 @@ export const characters: Character[] = [
     magic: MagicType.luck,
     classes: ["Glücksmagie", "Telepathie"],
     mbti: "ESFP",
+    fears: ["Verlust"],
     past: "Wenn Valda nach ihrer Herkunft gefragt wird, nennt sie immer Orte, die niemand zu kennen scheint. Außerdem verstrickt sie sich bei Richtungsangaben ständig in Widersprüchen.",
     problem: "Die Männerwelt stellt für Valda eine große Motivation dar. Sie hat jede Woche einen neuen Schwarm. Aber sie kann auch teilen: Wenn Adryan schon nicht zu ihr gehören will, soll wenigstens Sora ihn haben.",
     description: "Heimliche Heldin. Sabotiert durch Tollpatschigkeit bzw. versteckte Glücksmagie Halonas Ranschmeißversuche. Unterstützt Ship Halona und Adryan nicht!",
@@ -1185,6 +1197,7 @@ export const characters: Character[] = [
     mbti: "INFJ",
     past: "Lior stammt aus einer Nichtmagier-Familie, die eine eigene Gärtnerei besitzt und hat seine Magie erst vor ein paar Monaten entdeckt. ",
     problem: "Sehr kranke Mutter, die er mit seinen Fähigkeiten unbedingt retten möchte.",
+    fears: ["Verlust", "Scham"],
     description: "Lior ist eine sanfte Seele, der immer freundlich zu jedem ist. Dabei bleibt er aber stets oberflächlich. " +
       "Es dauert lange bis er mit jemandem über Persönliches redet. Er liest gerne und mag Pflanzen. Er hasst Lärm und Streit. ",
     pets: []
@@ -1281,6 +1294,7 @@ export const characters: Character[] = [
     past: "Familie hat ein Dojo.",
     problem: "Er ist viel zu simpel für Probleme.",
     description: "",
+    fears: ["Entbehrungen"],
     pets: []
   },
   {
@@ -1340,6 +1354,7 @@ export const characters: Character[] = [
     mbti: "ESFP",
     past: "Kommt aus einer niederen Magierfamilie, hat sehr viele Geschwister.",
     problem: "Steht oft im Schatten anderer. Kümmert sich sehr darum, was andere von ihr halten.",
+    fears: ["Kritik"],
     description: "",
     pets: []
   },
@@ -1388,6 +1403,7 @@ export const characters: Character[] = [
     magic: MagicType.light,
     classes: ["Lichtmagie", "Zeitmagie", "Heilmagie"],
     description: "Schulleitung",
+    fears: ["aktuell keine"],
     past: "Ihre Emotionen wurden durch einen mächtigen Fluch gestohlen, um die Akademie zu schwächen."
   },
   {
@@ -1432,6 +1448,7 @@ export const characters: Character[] = [
     },
     magic: MagicType.shadow,
     classes: ["Schattenmagie"],
+    fears: ["Kontrollverlust", "Fehlschläge", "Krebse", "Spinnen"],
     description: "",
   },
   {
@@ -1469,6 +1486,7 @@ export const characters: Character[] = [
     },
     magic: MagicType.water,
     classes: ["Wassermagie", "Tränke"],
+    fears: ["jemanden zu enttäuschen"],
     description: "",
   },
   {
@@ -1542,6 +1560,7 @@ export const characters: Character[] = [
     magic: MagicType.air,
     classes: ["Luftmagie", "Magische Bande", "Portale"],
     development: "Schulleitung",
+    fears: ["in Vergessenheit zu geraten"],
     description: "Beginnt seine Sätze häufig mit 'Nun denn'.",
   },
   {
@@ -1616,6 +1635,7 @@ export const characters: Character[] = [
     magic: MagicType.summoning,
     classes: ["Beschwörung", "Magiegeschichte"],
     description: "Nebencharakter",
+    fears: ["dem Unbekannten"],
   },
   {
     characterType: CharacterType.chun,
@@ -1722,6 +1742,7 @@ export const characters: Character[] = [
       "hat er diesen durch ein Portal zu Meisterin Fenris in die Akademie geschickt. Er wurde kurz darauf von " +
       "Kristallwächtern geschnappt. Er wird verhaftet, nimmt die Schuld auf sich und behauptet, dass er den Kristall " +
       "zerstört hat. Er wird zum Tode verurteilt. Kriegsverbrecher/ Verräter.",
+    fears: ["seine Liebsten zu verlieren"],
   },
   {
     characterType: CharacterType.arashi,
@@ -1962,6 +1983,7 @@ export const characters: Character[] = [
         description: "dunkelbraune Augen",
       },
     },
-    description: "",
+    description: "Kai ist ein sturer Mensch, der lange in der Armee gedient und sich dort einen Namen gemacht hat.",
+    fears: ["Schuld", "als schlechter Mensch angesehen zu werden"],
   },
 ];
