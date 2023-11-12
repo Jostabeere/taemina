@@ -44,7 +44,7 @@ export class MapComponent implements OnInit {
   @HostListener('click', ['$event'])
   onMouseClick(e: any): void {
     if (this.paragraph != null) {
-      const title: string = this.getTitle(e);
+      const title: string | null = this.getTitle(e);
       if (title != null) {
         this.paragraph.nativeElement.style.display = "inline-block";
         this.paragraph.nativeElement.style.top = e.clientY - 75 + "px";
@@ -56,8 +56,11 @@ export class MapComponent implements OnInit {
     }
   }
 
-  getTitle(e: any): string {
+  getTitle(e: any): string | null {
     //return e.target.parentNode.getAttribute("title");
-    return e.target.closest('a').getAttribute("title");
+    if (e.target.closest('a') != null) {
+      return e.target.closest('a').getAttribute("title");
+    }
+    return null;
   }
 }
