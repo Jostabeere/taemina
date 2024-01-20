@@ -118,7 +118,7 @@ export const characters: Character[] = [
     },
     magic: MagicType.light,
     classes: ["Lichtmagie-Spezial", "Zaubersprüche", "Geschichte der Magie", "Magische Bande", "Translokation", "Telepathie", "Heilmagie", "Kemu"],
-    mbti: "ENFP",
+    mbti: "ISFP",
     past: "Sora ist bei ihrer Mutter aufgewachsen. Ihr Vater ist an einer mysteriösen Krankheit gestorben, die allerdings nur eine List war, um sie zu schützen. Sie möchte schon von Kindesbeinen an auf die Taemina-Akademie gehen. Sie ist eine Freundin der Menschen und hofft, dass Menschen und Magier sich wieder besser verstehen lernen.",
     problem: "Rückschläge nagen schnell an ihrem Selbstvertrauen. Dann plagen sie Selbstzweifel und sie schottet sich ab.",
     development: "Sie muss lernen, selbstbewusster zu werden und mehr an sich zu glauben.",
@@ -934,12 +934,12 @@ export const characters: Character[] = [
     ],
     looks: {
       hairColor: {
-        color: "#4d300a",
-        description: "Zwei lange braune Zöpfe mit Seitenpony",
+        color: "#251807",
+        description: "Zwei lange, dunkelbraune Zöpfe mit Seitenpony",
       },
       eyeColor: {
-        color: "#ffa42c",
-        description: "bernsteinfarbene Augen",
+        color: "#632c00",
+        description: "schokoladenfarbene Augen",
       },
       accessory: "",
       body: "174cm groß",
@@ -1510,7 +1510,7 @@ export const characters: Character[] = [
         description: "Pixiecut, schwarz",
       },
       eyeColor: {
-        color: "#8eb2aa",
+        color: "#d7a80f",
         description: "goldene Augen",
       },
     },
@@ -1794,10 +1794,10 @@ export const characters: Character[] = [
     description: "Soras Mutter.",
   },
   {
-    characterType: CharacterType.arlen,
-    name: "Arlen",
+    characterType: CharacterType.erlen,
+    name: "Erlen",
     lastName: "Adair",
-    image: "assets/img/character/arlen.jpg",
+    image: "assets/img/character/erlen.jpg",
     meanings: [
       {
         property: "Vorname",
@@ -1827,7 +1827,7 @@ export const characters: Character[] = [
       },
       {
         key: Extent.always,
-        value: "skrupelos",
+        value: "skrupellos",
         icon: "delete",
         positive: false,
       },
@@ -1850,7 +1850,8 @@ export const characters: Character[] = [
       body: "groß, schlank",
     },
     magic: MagicType.earth,
-    description: "Gehört den Magierjägern an.",
+    description: "Ein ungewöhnlicher Magierjäger, der die anderen Manahunen aus dem Rat zu kennen scheint.",
+    past: "Einst war er ein Manahune der Taemina-Akademie. Seine ideenreiche Forschung und unablässige Arbeit hat der Akademie viele neue Erkenntnisse beschert. Nach dem Ausscheiden eines Ratsmitglieds, fiel die Wahl jedoch unerwarteterweise nicht zu seinen Gunsten aus. Seiner Meinung nach stand ein Sitz im Rat der Magier schon lange zu, doch er wurde aufgrund charakterlicher Vorbehalte abgewiesen. Brüskiert wandten er und seine Familie sich von der Akademie ab. Schlussendlich fand er eine neue Gemeinschaft, die ihn seiner Meinung nach mehr schätzte: die Magiejäger."
   },
   {
     characterType: CharacterType.sturmlaeufer,
@@ -1967,7 +1968,8 @@ export const characters: Character[] = [
   }, {
     characterType: CharacterType.kai,
     name: "Kai",
-    lastName: "",
+    specialName: "Birne",
+    lastName: "von Ribbeck",
     age: "46",
     image: "assets/img/character/kai.jpg",
     meanings: [],
@@ -1985,5 +1987,28 @@ export const characters: Character[] = [
     },
     description: "Kai ist ein sturer Mensch, der lange in der Armee gedient und sich dort einen Namen gemacht hat.",
     fears: ["Schuld", "als schlechter Mensch angesehen zu werden"],
+  }, {
+    characterType: CharacterType.koblauch,
+    name: "Sarka",
+    specialName: "Knoblauchkröte",
+    lastName: "Knobelfrosch",
+    age: "643",
+    image: "assets/img/character/unknown.jpg",
+    meanings: [],
+    skills: [],
+    traits: [],
+    looks: {
+      hairColor: {
+        color: "#ffcef3",
+        description: "rosa-graues Haar, zu einem Knoten hochgesteckt",
+      },
+      eyeColor: {
+        color: "#738b34",
+        description: "laubgrüne Augen",
+      },
+    },
+    description: "Eine ehrgeizige Magierin des zweithöchsten Rangs 'Manata', die um jeden Preis zur Manahune werden will.",
+    fears: ["es zu nichts bringen"],
+    magic: MagicType.light,
   },
 ];

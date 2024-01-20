@@ -1,3 +1,7 @@
-<span *ngIf="specialization" class="background-{{specialization.color}}">
+<span *ngIf="specialization" class="background-{{specialization.color}}" matTooltip="{{specialization.name}}">
   <mat-icon>{{specialization.icon}}</mat-icon>
+</span>
+
+<span *ngIf="!specialization" class="background-none" matTooltip="Mensch (keine Magie)">
+  <mat-icon>person</mat-icon>
 </span>

@@ -27,10 +27,11 @@ export enum CharacterType {
   arashi = 'Arashi',
   astarot = 'Astarot',
   hikari = 'Hikari',
-  arlen = 'Arlen',
+  erlen = 'Arlen',
   sturmlaeufer = 'Sturmläufer',
   fin = 'Fin',
   castiel = 'Castiel',
   kimmi = 'Kimmi',
   kai = 'Kai',
+  koblauch = 'Kboblauchkröte',
 }

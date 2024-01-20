@@ -68,7 +68,8 @@ span {
 
 .background-illusion {
   color: white;
-  background: linear-gradient(to top, #5f91dc, #ff9364, #7cd973); /* Standard syntax (must be last) */
+  background: linear-gradient(to top, #5f91dc, #ff9364, #7cd973);
+  /* Standard syntax (must be last) */
 }
 
 .background-plant {
@@ -85,4 +86,9 @@ span {
 .background-metamorphosis {
   color: white;
   background: linear-gradient(to bottom, #b5f8d1, #003a2b);
+}
+
+.background-none {
+  color: white;
+  background: linear-gradient(to bottom, #ffdeff, #f9d8b9);
 }
